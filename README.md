@@ -23,5 +23,5 @@ A new [unicornWitnesses](https://unicornwitnesses.com) website
 2. Add/delete some code
 3. `npm run lint:fix`
 4. `git add` {changes}
-5. `git commit -m` {describe the changes with a couple of words}
+5. `git commit -m` {describe the changes with a couple of words, example: add linters for css and js}
 6. `git push`

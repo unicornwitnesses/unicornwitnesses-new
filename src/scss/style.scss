@@ -1,6 +1,7 @@
 @import "~normalize.css";
 @import "./fonts.scss";
 @import "./mixins.scss";
+@import "./header.scss";
 
 *,
 *::before,
@@ -34,6 +35,15 @@ h4 {
   font-size: 36px;
   font-weight: bold;
   line-height: 130%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 // declare container-block

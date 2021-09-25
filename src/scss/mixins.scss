@@ -11,5 +11,6 @@
 
 @mixin body2-link {
   @include body2-font;
+
   text-decoration-line: underline;
 }

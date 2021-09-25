@@ -6,7 +6,9 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "start": "cross-env NODE_ENV=development webpack serve --hot --mode development"
+    "start": "cross-env NODE_ENV=development webpack serve --hot --mode development",
+    "lint:css": "npx stylelint \"**/scss/*.{css,scss}\"",
+    "lint:css:fix": "npx stylelint \"**/scss/*.{css,scss}\" --fix"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,9 @@
     "postcss": "^8.3.7",
     "postcss-loader": "^6.1.1",
     "sass-loader": "^12.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.21.0",
     "webpack": "^5.47.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"

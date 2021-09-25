@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const webpack = require("webpack");
+
 const filename = (ext) =>
   isDev ? `[name]${[ext]}` : `[name].[contenthash]${[ext]}`;
 
@@ -31,7 +31,7 @@ module.exports = {
 
   plugins: [
     new HTMLWebpackPlugin({
-      title: "My App",
+      title: "UnicornWitnesses",
       template: path.resolve(__dirname, "src/index.html"),
       filename: "index.html",
       minify: {

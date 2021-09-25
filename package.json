@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
 		"start": "cross-env NODE_ENV=development webpack --mode development",
-    "start:dev": "cross-env NODE_ENV=development webpack serve --hot --mode development",
+    "start:dev": "cross-env NODE_ENV=development webpack serve --hot --open --mode development",
     "lint": "yarn lint:css && yarn lint:js",
     "lint:fix": "yarn lint:css:fix && yarn lint:js:fix",
     "lint:js": "eslint --ext .js src/",

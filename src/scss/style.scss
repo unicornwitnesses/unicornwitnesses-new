@@ -1,8 +1,45 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
+@import "~normalize.css";
+@import "./fonts.scss";
+@import "./mixins.scss";
+
+*,
+*::before,
+*::after {
+  @include body1-font;
+  box-sizing: border-box;
+  color: #fff;
 }
 
-.section {
-    text-align: center;
+body {
+  background-color: #000;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 110%;
+  margin: 0;
+}
+
+h2 {
+  font-family: "noto_sans_bold", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 133%;
+}
+
+h3,
+h4 {
+  font-family: "noto_sans_bold", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.body2-font {
+  @include body2-font;
+}
+
+.body2-link {
+  @include body2-link;
 }

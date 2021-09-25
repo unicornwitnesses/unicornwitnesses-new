@@ -6,6 +6,7 @@
 *::before,
 *::after {
   @include body1-font;
+
   box-sizing: border-box;
   color: #fff;
 }
@@ -38,7 +39,7 @@ h4 {
 
 // declare container-block
 .container {
-    margin: 0 auto;
-    max-width: 1270px;
-    padding: 0;
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 0;
 }

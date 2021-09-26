@@ -1,0 +1,11 @@
+# Dirs
+node_modules/
+build/
+.idea
+public/
+app/
+
+# Files
+*.md
+*.css
+*.scss

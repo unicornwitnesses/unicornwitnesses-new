@@ -1,11 +1,15 @@
 _
-.idea
 
+# IDEs
+.idea
 .vscode
 
 .DS_Store
 
-/dist
+# Production
+app
+build
+dist
 
 # Logs
 logs

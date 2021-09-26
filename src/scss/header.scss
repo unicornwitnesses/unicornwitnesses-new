@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 .header {
   padding: 16px 0 7px 0;
   position: sticky;
@@ -15,6 +17,41 @@
   &__logo > img {
     width: 100%;
     object-fit: cover;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 634px 372px;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.content {
+  .menu {
+    &__list {
+      display: flex;
+      justify-content: start;
+    }
+
+    &__item {
+      margin-left: 32px;
+    }
+
+    &__link {
+      @include body2-font;
+    }
+  }
+
+  .lang {
+    &__speech {
+      @include body2-font;
+
+      color: aqua;
+    }
+
+    &__select {
+			color: red;
+    }
   }
 }
 

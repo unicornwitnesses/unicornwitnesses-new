@@ -13,6 +13,7 @@
 
 body {
   background-color: #000;
+  height: 200vh;
 }
 
 h1 {
@@ -46,9 +47,13 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 // declare container-block
 .container {
     margin: 0 auto;
     max-width: 1270px;
-    padding: 0;
+    padding: 0 15px;
 }

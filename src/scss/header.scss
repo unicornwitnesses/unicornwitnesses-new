@@ -1,4 +1,14 @@
 .header {
     padding: 16px 0 7px 0;
-    position: fixed;
+    position: sticky;
+    top: 0;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.burger {
+    display: none;
 }

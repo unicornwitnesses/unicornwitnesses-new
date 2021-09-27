@@ -1,4 +1,5 @@
 @import "./mixins.scss";
+@import "./colors.scss";
 
 .header {
   padding: 16px 0 7px 0;
@@ -22,7 +23,8 @@
   &__content {
     display: grid;
     grid-template-columns: 634px 372px;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
+    row-gap: 15px;
   }
 }
 
@@ -30,11 +32,7 @@
   .menu {
     &__list {
       display: flex;
-      justify-content: start;
-    }
-
-    &__item {
-      margin-left: 32px;
+      justify-content: space-between;
     }
 
     &__link {
@@ -43,15 +41,52 @@
   }
 
   .lang {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     &__speech {
       @include body2-font;
-
-      color: aqua;
     }
 
     &__select {
-			color: red;
+      @include body2-font;
+
+      display: flex;
+
+      & > img {
+        width: 100%;
+        object-fit: contain;
+      }
     }
+
+    &__arrow {
+      display: flex;
+    }
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+
+    &__descr {
+      @include body2-font;
+
+      color: $gray;
+    }
+
+    & > a {
+      @include body2-font;
+
+      color: $gold;
+      text-decoration: underline;
+    }
+  }
+
+  .socials {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
   }
 }
 

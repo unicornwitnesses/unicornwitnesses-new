@@ -6,13 +6,13 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack --mode development",
-    "start:dev": "cross-env NODE_ENV=development webpack serve --hot --open --mode development",
+    "dev": "cross-env NODE_ENV=development webpack serve --hot --open --mode development",
     "lint": "yarn lint:css && yarn lint:js",
     "lint:fix": "yarn lint:css:fix && yarn lint:js:fix",
     "lint:js": "eslint --ext .js src/",
     "lint:js:fix": "eslint --ext .js src/ --fix",
-    "lint:css": "npx stylelint \"**/scss/*.{css,scss}\"",
-    "lint:css:fix": "npx stylelint \"**/scss/*.{css,scss}\" --fix"
+    "lint:css": "stylelint \"**/scss/*.{css,scss}\"",
+    "lint:css:fix": "stylelint \"**/scss/*.{css,scss}\" --fix"
   },
   "repository": {
     "type": "git",

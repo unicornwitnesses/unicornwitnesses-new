@@ -12,17 +12,19 @@
   }
 
   &__logo {
-    min-width: 100px;
+    flex: 0 0 187px;
+    height: 102px;
+    margin-right: 15px;
   }
 
   &__logo > img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__content {
     display: grid;
-    grid-template-columns: 634px 372px;
+    grid-template-columns: minmax(max-content, 634px) minmax(max-content, 372px);
     grid-template-rows: min-content 1fr;
     row-gap: 15px;
   }
@@ -44,9 +46,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 5px 0 0 0;
 
     &__speech {
       @include body2-font;
+
+      margin-right: 12px;
     }
 
     &__select {
@@ -62,6 +67,10 @@
 
     &__arrow {
       display: flex;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -92,4 +101,60 @@
 
 .burger {
   display: none;
+
+  &__label {
+    @include body2-font;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    &__logo {
+      height: 60px;
+      flex-basis: 110px;
+    }
+
+    &__content {
+      display: none;
+    }
+  }
+
+  .burger {
+    align-items: center;
+    display: flex;
+    padding: 16px 20px 0 0;
+
+    &__label {
+      margin-right: 12px;
+    }
+
+    &__button {
+      position: relative;
+      width: 28px;
+      height: 20px;
+
+      & > span {
+        display: block;
+        background-color: #fff;
+        content: '';
+        height: 3px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        &:nth-of-type(2) {
+          top: 8.7px;
+        }
+
+        &:nth-of-type(3) {
+          margin-top: 17.4px;
+        }
+      }
+    }
+  }
 }

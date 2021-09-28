@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 426px) {
   .header {
     &__logo {
       height: 60px;
@@ -127,7 +127,10 @@
   .burger {
     align-items: center;
     display: flex;
-    padding: 16px 20px 0 0;
+    position: absolute;
+    right: 21px;
+    top: 46px;
+    z-index: 2;
 
     &__label {
       margin-right: 12px;
@@ -155,6 +158,38 @@
           margin-top: 17.4px;
         }
       }
+    }
+  }
+
+  .content {
+    background-color: #000;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+    padding: 45px 20px 29px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .socials {
+    grid-row-start: span 2;
+  }
+
+  .mail {
+    grid-row-start: span 4;
+  }
+
+  .lang {
+    grid-row-start: span 3;
+  }
+
+  .menu {
+    grid-row-start: span 1;
+
+    &__list {
+      flex-direction: column;
     }
   }
 }

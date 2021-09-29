@@ -162,34 +162,57 @@
   }
 
   .content {
+    align-content: space-between;
     background-color: #000;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
     height: 100vh;
     padding: 45px 20px 29px 24px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    grid-template-areas: 'gridItem4' 'gridItem1' 'gridItem3' 'gridItem2';
   }
 
   .socials {
-    grid-row-start: span 2;
+    grid-area: gridItem1;
   }
 
   .mail {
-    grid-row-start: span 4;
+    grid-area: gridItem2;
   }
 
   .lang {
-    grid-row-start: span 3;
+    grid-area: gridItem3;
   }
 
   .menu {
-    grid-row-start: span 1;
+    grid-area: gridItem4;
 
     &__list {
       flex-direction: column;
+    }
+  }
+
+  .active {
+    .burger__button {
+      :nth-child(even) {
+        display: none;
+      }
+
+      :nth-child(odd) {
+        top: 8.7px;
+        margin: 0;
+      }
+
+      :first-child {
+        transform: rotate(45deg);
+      }
+
+      :last-child {
+        transform: rotate(-45deg);
+      }
     }
   }
 }

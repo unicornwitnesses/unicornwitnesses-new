@@ -1,218 +1,204 @@
 @import "./mixins.scss";
 @import "./colors.scss";
+// I don't like my version of animation with navbar.
+// I think - Maybe we can find other way of implementation this idea
+@keyframes moveWindowLeft {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes moveWindowRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100vw;
+    }
+}
 
 .header {
-  padding: 16px 0 7px 0;
-  position: sticky;
-  top: 0;
-
-  &__body {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__logo {
-    flex: 0 0 187px;
-    height: 102px;
-    margin-right: 15px;
-  }
-
-  &__logo > img {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  &__content {
-    display: grid;
-    grid-template-columns: minmax(max-content, 634px) minmax(max-content, 372px);
-    grid-template-rows: min-content 1fr;
-    row-gap: 15px;
-  }
+    background-color: #000;
+    padding: 17px 0 7px 0;
+    position: sticky;
+    top: -1px;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        flex: 0 0 187px;
+        height: 102px;
+        margin-right: 15px;
+    }
+    &__logo>img {
+        width: 100%;
+        object-fit: contain;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: minmax(max-content, 634px) minmax(max-content, 372px);
+        grid-template-rows: min-content 1fr;
+        row-gap: 15px;
+    }
 }
 
 .content {
-  .menu {
-    &__list {
-      display: flex;
-      justify-content: space-between;
+    .menu {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__link {
+            @include body2-font;
+        }
     }
-
-    &__link {
-      @include body2-font;
+    .lang {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px 0 0 0;
+        &__speech {
+            @include body2-font;
+            margin-right: 12px;
+        }
+        &__select {
+            @include body2-font;
+            display: flex;
+            &>img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &__arrow {
+            display: flex;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
-  }
-
-  .lang {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px 0 0 0;
-
-    &__speech {
-      @include body2-font;
-
-      margin-right: 12px;
+    .mail {
+        display: flex;
+        flex-direction: column;
+        &__descr {
+            @include body2-font;
+            color: $gray;
+        }
+        &>a {
+            @include body2-font;
+            color: $gold;
+            text-decoration: underline;
+        }
     }
-
-    &__select {
-      @include body2-font;
-
-      display: flex;
-
-      & > img {
-        width: 100%;
-        object-fit: contain;
-      }
+    .socials {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
     }
-
-    &__arrow {
-      display: flex;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-
-  .mail {
-    display: flex;
-    flex-direction: column;
-
-    &__descr {
-      @include body2-font;
-
-      color: $gray;
-    }
-
-    & > a {
-      @include body2-font;
-
-      color: $gold;
-      text-decoration: underline;
-    }
-  }
-
-  .socials {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-  }
 }
 
 .burger {
-  display: none;
-
-  &__label {
-    @include body2-font;
-  }
-
-  &__button {
-    width: 40px;
-    height: 40px;
-  }
+    display: none;
+    &__label {
+        @include body2-font;
+    }
+    &__button {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 426px) {
-  .header {
-    &__logo {
-      height: 60px;
-      flex-basis: 110px;
+    .lock {
+        overflow: hidden;
     }
-
-    &__content {
-      display: none;
+    .header {
+        &__logo {
+            height: 60px;
+            flex-basis: 110px;
+        }
+        &__content {
+            align-content: space-between;
+            background-color: #000;
+            display: none;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4, max-content);
+            height: calc(100vh + 1px);
+            padding: 45px 20px 29px 24px;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            grid-template-areas: 'gridItem4' 'gridItem1' 'gridItem3' 'gridItem2';
+        }
     }
-  }
-
-  .burger {
-    align-items: center;
-    display: flex;
-    position: absolute;
-    right: 21px;
-    top: 46px;
-    z-index: 2;
-
-    &__label {
-      margin-right: 12px;
-    }
-
-    &__button {
-      position: relative;
-      width: 28px;
-      height: 20px;
-
-      & > span {
-        display: block;
-        background-color: #fff;
-        content: '';
-        height: 3px;
+    .burger {
+        align-items: center;
+        display: flex;
         position: absolute;
-        top: 0;
-        width: 100%;
-
-        &:nth-of-type(2) {
-          top: 8.7px;
+        right: 21px;
+        top: 46px;
+        z-index: 3;
+        &__label {
+            margin-right: 12px;
         }
-
-        &:nth-of-type(3) {
-          margin-top: 17.4px;
+        &__button {
+            position: relative;
+            width: 28px;
+            height: 20px;
+            &>span {
+                display: block;
+                background-color: #fff;
+                content: '';
+                height: 3px;
+                position: absolute;
+                top: 0;
+                transition: transform 0.3s linear;
+                width: 100%;
+                &:nth-of-type(2) {
+                    top: 8.7px;
+                }
+                &:nth-of-type(3) {
+                    margin-top: 17.4px;
+                }
+            }
         }
-      }
     }
-  }
-
-  .content {
-    align-content: space-between;
-    background-color: #000;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, max-content);
-    height: 100vh;
-    padding: 45px 20px 29px 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    grid-template-areas: 'gridItem4' 'gridItem1' 'gridItem3' 'gridItem2';
-  }
-
-  .socials {
-    grid-area: gridItem1;
-  }
-
-  .mail {
-    grid-area: gridItem2;
-  }
-
-  .lang {
-    grid-area: gridItem3;
-  }
-
-  .menu {
-    grid-area: gridItem4;
-
-    &__list {
-      flex-direction: column;
+    .socials {
+        grid-area: gridItem1;
     }
-  }
-
-  .active {
-    .burger__button {
-      :nth-child(even) {
-        display: none;
-      }
-
-      :nth-child(odd) {
-        top: 8.7px;
-        margin: 0;
-      }
-
-      :first-child {
-        transform: rotate(45deg);
-      }
-
-      :last-child {
-        transform: rotate(-45deg);
-      }
+    .mail {
+        grid-area: gridItem2;
     }
-  }
+    .lang {
+        grid-area: gridItem3;
+    }
+    .menu {
+        grid-area: gridItem4;
+        &__list {
+            flex-direction: column;
+        }
+    }
+    .active {
+        .header__body {
+            height: 100vh;
+        }
+        .burger__button {
+             :nth-child(even) {
+                display: none;
+            }
+             :nth-child(odd) {
+                top: 8.7px;
+                margin: 0;
+            }
+             :first-child {
+                transform: rotate(45deg);
+            }
+             :last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
 }

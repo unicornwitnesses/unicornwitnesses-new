@@ -97,6 +97,11 @@
         align-items: center;
         justify-content: space-between;
         display: flex;
+        &__link {
+            &>img:hover {
+                transform: scale(1.5);
+            }
+        }
     }
 }
 

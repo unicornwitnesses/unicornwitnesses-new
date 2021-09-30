@@ -1,18 +1,3 @@
-// let menuBtn = document.querySelector(".header__burger");
-// let menu = document.querySelector(".content");
-// menuBtn.addEventListener("click", () => {
-
-//     menuBtn.classList.toggle("active");
-//     menu.classList.toggle("active");
-
-//     if (menu.classList.contains("active")) {
-//         document.querySelector('header').style.overflow = "hidden";
-//         menu.style.display = "grid";
-//     } else {
-//         document.querySelector('header').style.overflow = "";
-//         menu.style.display = "none";
-//     }
-// });
 document.addEventListener("DOMContentLoaded", (e) => {
     let body = document.body;
     let header = document.querySelector('.header__body');

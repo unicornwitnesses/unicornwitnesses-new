@@ -251,10 +251,12 @@
         &__content {
             align-content: space-between;
             background-color: #000;
-            display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat(2, max-content);
             justify-items: start;
+            position: relative;
+            top: 0;
+            width: 100%;
             z-index: 2;
             flex: 0 1 372px;
             grid-template-areas: 'lang' 'social';
@@ -313,6 +315,7 @@
     }
     .active {
         .header__body {
+            position: relative;
             height: 100vh;
         }
         .content {
@@ -360,7 +363,7 @@
                 }
             }
         }
-        &__ .burger__button {
+        .burger__button {
              :nth-child(even) {
                 display: none;
             }

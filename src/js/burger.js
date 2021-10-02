@@ -26,14 +26,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         if (window.screen.width <= 1024 && window.screen.width >= 768) {
             if (menu.classList.contains('active')) {
-                menu.style.display = 'grid';
                 menu.style.animation = 'moveWindowLeft 0.3s 1';
-                menu.style.left = '0';
-            } else {
-                menu.style.animation = 'moveWindowRight 0.3s 1';
-
                 setTimeout(() => {
-                    menu.style.display = 'grid';
+                    menu.style.left = '0';
                 }, 300);
             }
         }

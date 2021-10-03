@@ -2,23 +2,63 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
 </head>
 
 <body>
-	<header class="header"></header>
-	<main class="main">
-		<section class="team-presentation"></section>
-		<section class="principles"></section>
-		<section class="product-story"></section>
-		<section class="team-story"></section>
-		<section class="team-speaches"></section>
-	</main>
-	<footer class="footer"></footer>
+    <header class="header"></header>
+    <main class="main">
+        <section class="team-presentation">
+            <div class="outer-container">
+                <div class="container">
+                    <div class="team-presentation__leading-block leading-block">
+                        <div class="leading-block__text">
+                            <div class="leading-block__title">
+                                <h1>
+                                    Мы объединились и создаём социально-значимые цифровые продукты
+                                </h1>
+                            </div>
+                            <div class="leading-block__subtitle">
+                                Нам нравится помогать людям: делимся знаниями, генерируем идеи и воплощаем их в жизнь.
+                            </div>
+                        </div>
+                        <div class="leading-block__join join-block">
+                            <span class="join-block__label">
+															Говорят, наши чаты самые дружелюбные:
+														</span>
+                            <a href="" class="join-block__link">
+                                <img src="" alt="" class="join-block__icon">
+                                <span class="join-block__contact">
+																	Discord
+																</span>
+                            </a>
+                            <a href="" class="join-block__link">
+                                <img src="" alt="" class="join-block__icon">
+                                <span class="join-block__contact">
+																	Telegram
+																</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-presentation__avatar-block avatars">
+                    <div class="avatars__row avs-row-sm"></div>
+                    <div class="avatars__row avs-row-lg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="principles"></section>
+        <section class="product-story"></section>
+        <section class="team-story"></section>
+        <section class="team-speaches"></section>
+    </main>
+    <footer class="footer"></footer>
 </body>
 
 </html>

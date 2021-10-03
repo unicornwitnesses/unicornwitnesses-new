@@ -1,0 +1,16 @@
+.outer-container {
+    max-width: 1550px;
+    padding: 0 15px;
+}
+
+.team-presentation {
+    &__leading-block {}
+    &__avatar-block {}
+}
+
+.leading-block {
+    &__text {}
+    &__title {}
+    &__subtitle {}
+    &__join {}
+}

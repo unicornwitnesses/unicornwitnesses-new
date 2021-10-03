@@ -1,59 +1,59 @@
 {
-  "name": "unicornwitnesses-new",
-  "version": "1.0.0",
-  "description": "project of new version of official site www.unicornwithnesses.com",
-  "main": "index.js",
-  "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode production",
-		"start": "cross-env NODE_ENV=development webpack --mode development",
-    "start:dev": "cross-env NODE_ENV=development webpack serve --hot --open --mode development",
-    "lint": "yarn lint:css && yarn lint:js",
-    "lint:fix": "yarn lint:css:fix && yarn lint:js:fix",
-    "lint:js": "eslint --ext .js src/",
-    "lint:js:fix": "eslint --ext .js src/ --fix",
-    "lint:css": "npx stylelint \"**/scss/*.{css,scss}\"",
-    "lint:css:fix": "npx stylelint \"**/scss/*.{css,scss}\" --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/unicornwitnesses/unicornwitnesses-new.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/unicornwitnesses/unicornwitnesses-new/issues"
-  },
-  "homepage": "https://github.com/unicornwitnesses/unicornwitnesses-new#readme",
-  "browserslist": [
-    "last 2 version",
-    "> 1%"
-  ],
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.3.5",
-    "babel-eslint": "^10.1.0",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "copy-webpack-plugin": "^9.0.1",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.2.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.1.0",
-    "node-sass": "^6.0.1",
-    "postcss": "^8.3.7",
-    "postcss-loader": "^6.1.1",
-    "prettier": "^2.4.1",
-    "sass-loader": "^12.1.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-scss": "^3.21.0",
-    "webpack": "^5.47.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  }
+    "name": "unicornwitnesses-new",
+    "version": "1.0.0",
+    "description": "project of new version of official site www.unicornwithnesses.com",
+    "main": "index.js",
+    "scripts": {
+        "build": "cross-env NODE_ENV=production webpack --mode production",
+        "start": "cross-env NODE_ENV=development webpack --mode development",
+        "dev": "cross-env NODE_ENV=development webpack serve --hot --open --mode development",
+        "lint": "yarn lint:css && yarn lint:js",
+        "lint:fix": "yarn lint:css:fix && yarn lint:js:fix",
+        "lint:js": "eslint --ext .js src/",
+        "lint:js:fix": "eslint --ext .js src/ --fix",
+        "lint:css": "stylelint \"**/scss/*.{css,scss}\"",
+        "lint:css:fix": "stylelint \"**/scss/*.{css,scss}\" --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/unicornwitnesses/unicornwitnesses-new.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/unicornwitnesses/unicornwitnesses-new/issues"
+    },
+    "homepage": "https://github.com/unicornwitnesses/unicornwitnesses-new#readme",
+    "browserslist": [
+        "last 2 version",
+        "> 1%"
+    ],
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.3.5",
+        "babel-eslint": "^10.1.0",
+        "clean-webpack-plugin": "^4.0.0-alpha.0",
+        "copy-webpack-plugin": "^9.0.1",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.2.0",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "html-webpack-plugin": "^5.3.2",
+        "mini-css-extract-plugin": "^2.1.0",
+        "node-sass": "^6.0.1",
+        "postcss": "^8.3.7",
+        "postcss-loader": "^6.1.1",
+        "prettier": "^2.4.1",
+        "sass-loader": "^12.1.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-scss": "^3.21.0",
+        "webpack": "^5.47.1",
+        "webpack-cli": "^4.7.2",
+        "webpack-dev-server": "^3.11.2"
+    }
 }

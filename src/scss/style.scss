@@ -5,92 +5,83 @@
 @import "./mixins.scss";
 @import './sections/team-presentation.scss';
 @import "./header.scss";
-
 *,
 *::before,
 *::after {
-  @include body1-font;
-
-  box-sizing: border-box;
-  color: #fff;
+    @include body1-font;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
-  background-color: #000;
-  height: 100vh;
+    background-color: #000;
+    height: 200vh;
 }
 
 h1 {
-  font-family: "noto_sans_bold", sans-serif;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 110%;
-  margin: 0;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 110%;
+    margin: 0;
 }
 
 h2 {
-  font-family: "noto_sans_bold", sans-serif;
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 133%;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 133%;
 }
 
 h3,
 h4 {
-  font-family: "noto_sans_bold", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 130%;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 // declare container-block
 .container {
-  margin: 0 auto;
-  max-width: 1270px;
-  padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1270px;
+    padding: 0 15px;
 }
 
 @media (max-width: 960px) {
-  .container {
-    padding: 0 10px;
-  }
+    .container {
+        padding: 0 10px;
+    }
 }
 
 // media-query for tablets
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (max-width: 960px) {
-  .container {
-    padding: 0 10px;
-  }
+    .container {
+        max-width: 703px;
+        padding: 0;
+    }
 }

@@ -85,5 +85,10 @@
                 border: none;
                 flex-direction: column;
                 padding: 0;
+                &__link {
+                    @include speech-bubble-left(60px, #7673fe, 3px, 30px);
+                    justify-content: center;
+                    margin-top: 24px;
+                }
             }
         }

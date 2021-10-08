@@ -15,13 +15,13 @@
 @mixin speech-bubble-left ($radius-property, $border-color, $border-width, $padding) {
     border: $border-width solid $border-color;
     border-radius: 0 $radius-property $radius-property $radius-property;
-    padding-left: $padding;
-    padding-right: $padding;
+    padding-top: $padding;
+    padding-bottom: $padding;
 }
 
 @mixin speech-bubble-right ($radius-property, $border-color, $border-width, $padding) {
     border: $border-width solid $border-color;
     border-radius: $radius-property 0 $radius-property $radius-property;
-    padding-left: $padding;
-    padding-right: $padding;
+    padding-top: $padding;
+    padding-bottom: $padding;
 }

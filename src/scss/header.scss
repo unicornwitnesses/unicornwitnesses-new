@@ -26,10 +26,11 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     &__body {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     &__logo {
         flex: 0 0 187px;
@@ -130,6 +131,7 @@
     }
     .header {
         padding-bottom: 56px;
+        // width: 100vw;
         &__logo {
             height: 60px;
             flex-basis: 110px;
@@ -153,7 +155,7 @@
         display: flex;
         position: absolute;
         right: 21px;
-        top: 46px;
+        top: 26px;
         z-index: 3;
         &__label {
             margin-right: 12px;
@@ -196,6 +198,9 @@
         }
     }
     .active {
+        .header__content {
+            width: 100vw;
+        }
         .header__body {
             height: 100vh;
         }
@@ -247,6 +252,7 @@
     .header {
         padding-top: 17px;
         padding-bottom: 56px;
+        &__body {}
         &__logo {
             height: 102px;
             flex-basis: 187px;
@@ -288,8 +294,8 @@
         align-items: center;
         display: flex;
         position: absolute;
-        right: 34px;
-        top: 25px;
+        right: 0px;
+        top: 7px;
         z-index: 3;
         &__label {
             margin-right: 12px;

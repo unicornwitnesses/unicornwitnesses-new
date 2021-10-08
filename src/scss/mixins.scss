@@ -12,6 +12,16 @@
     text-decoration-line: underline;
 }
 
-@mixin speech-bubble-left ($radius-property, $border-color, $border-width, $padding-top, $padding-side) {}
+@mixin speech-bubble-left ($radius-property, $border-color, $border-width, $padding) {
+    border: $border-width solid $border-color;
+    border-radius: 0 $radius-property $radius-property $radius-property;
+    padding-left: $padding;
+    padding-right: $padding;
+}
 
-@mixin speech-bubble-right {}
+@mixin speech-bubble-right ($radius-property, $border-color, $border-width, $padding) {
+    border: $border-width solid $border-color;
+    border-radius: $radius-property 0 $radius-property $radius-property;
+    padding-left: $padding;
+    padding-right: $padding;
+}

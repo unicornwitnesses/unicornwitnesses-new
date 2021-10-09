@@ -252,7 +252,6 @@
     .header {
         padding-top: 17px;
         padding-bottom: 56px;
-        &__body {}
         &__logo {
             height: 102px;
             flex-basis: 187px;
@@ -294,7 +293,7 @@
         align-items: center;
         display: flex;
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 7px;
         z-index: 3;
         &__label {

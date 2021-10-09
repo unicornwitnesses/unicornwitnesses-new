@@ -15,7 +15,7 @@
 .leading-block {
     &__subtitle {
         color: $gray;
-        // задаем цвет нашим svg-иконкам. отдельное спасибо https://codepen.io/sosuke/pen/Pjoqqp
+        // fill some color in svg-icons. great thanks to https://codepen.io/sosuke/pen/Pjoqqp
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         font-size: 36px;
         font-weight: 400;

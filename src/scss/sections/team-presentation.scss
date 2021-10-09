@@ -9,7 +9,11 @@
 .team-presentation {
     padding-top: 195px;
     &__leading-block {}
-    &__avatar-block {}
+    &__avatar-block {
+        margin: 100px auto 0 auto;
+        height: 100px;
+        background-color: #fff;
+    }
 }
 
 .leading-block {

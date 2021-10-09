@@ -125,7 +125,7 @@
 }
 
 //media-query for mobile devices
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media (max-width: 767px) {
     .lock {
         overflow: hidden;
     }
@@ -245,7 +245,7 @@
 }
 
 //media-query for tablets
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .lock {
         overflow: hidden;
     }
@@ -332,7 +332,6 @@
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: repeat(4, max-content);
-            height: 50vh;
             padding: 45px 20px 29px 24px;
             position: absolute;
             top: 0;

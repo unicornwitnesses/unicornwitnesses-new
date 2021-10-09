@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         menu.classList.toggle('active');
         menuBtn.classList.toggle('active');
 
-        if (window.screen.width <= 480) {
+        if (window.screen.width <= 767) {
             if (menu.classList.contains('active')) {
                 menu.style.display = 'grid';
                 menu.style.animation = 'moveWindowLeft 0.3s 1';

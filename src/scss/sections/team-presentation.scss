@@ -11,7 +11,6 @@
     &__leading-block {}
     &__avatar-block {
         margin: 100px auto 0 auto;
-        height: 100px;
         background-color: #fff;
     }
 }
@@ -58,6 +57,34 @@
         &>:hover {
             transform: scale(1.5);
         }
+    }
+}
+
+.avatars {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &-sm {
+            margin: 0 auto;
+            max-width: 1103px;
+        }
+    }
+    &__item {
+        background-color: red;
+        flex: 0 1 234px;
+        height: 234px;
+        position: relative;
+        transform: rotate( 45deg);
+        overflow: hidden;
+        border-radius: 94px;
+    }
+}
+
+.item {
+    &__img {
+        height: 104%;
+        object-fit: contain;
+        transform: rotate(-45deg);
     }
 }
 

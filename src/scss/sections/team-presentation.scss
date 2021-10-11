@@ -1,184 +1,192 @@
-@import '../colors.scss';
-@import "../mixins.scss";
-.outer-container {
-    margin: 0 auto;
-    max-width: 1550px;
-    padding: 0 15px;
-}
+    @import '../colors.scss';
+    @import "../mixins.scss";
+    .outer-container {
+        margin: 0 auto;
+        max-width: 1550px;
+        padding: 0 15px;
+    }
 
-.team-presentation {
-    padding-top: 195px;
-    &__leading-block {}
-    &__avatar-block {
-        margin: 100px auto 0 auto;
-        background-color: #fff;
-    }
-}
-
-.leading-block {
-    &__subtitle {
-        color: $gray;
-        // fill some color in svg-icons. great thanks to https://codepen.io/sosuke/pen/Pjoqqp
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 48px;
-        margin-top: 40px;
-        padding-right: 309px;
-    }
-    &__join {
-        @include speech-bubble-left(60px, #7673fe, 3px, 30px);
-        margin-top: 80px;
-        max-width: 950px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-
-.join-block {
-    @include body1-font;
-    display: flex;
-    justify-content: space-between;
-    &__label {
-        font-weight: 700;
-        line-height: 64px;
-    }
-    &__link {
-        align-items: center;
-        display: flex;
-        &>span {
-            font-weight: 500;
-            margin-left: 6px;
-            text-decoration-line: underline;
+    .team-presentation {
+        padding-top: 195px;
+        &__leading-block {}
+        &__avatar-block {
+            margin: 100px auto 0 auto;
+            background-color: #fff;
         }
     }
-    &__icon {
-        filter: invert(47%) sepia(97%) saturate(3540%) hue-rotate(224deg) brightness(109%) contrast(99%);
-        &>:hover {
-            transform: scale(1.5);
+
+    .leading-block {
+        &__subtitle {
+            color: $gray;
+            // fill some color in svg-icons. great thanks to https://codepen.io/sosuke/pen/Pjoqqp
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 48px;
+            margin-top: 40px;
+            padding-right: 309px;
+        }
+        &__join {
+            @include speech-bubble-left(60px, #7673fe, 3px, 30px);
+            margin-top: 80px;
+            max-width: 950px;
+            padding-left: 60px;
+            padding-right: 60px;
         }
     }
-}
 
-.avatars {
-    &__row {
+    .join-block {
+        @include body1-font;
         display: flex;
         justify-content: space-between;
-        &-sm {
-            margin: 0 auto;
-            max-width: 1103px;
-        }
-    }
-    &__item {
-        background-color: red;
-        flex: 0 1 234px;
-        height: 234px;
-        position: relative;
-        transform: rotate( 45deg);
-        overflow: hidden;
-        border-radius: 94px;
-    }
-}
-
-.item {
-    &__img {
-        height: 104%;
-        object-fit: contain;
-        transform: rotate(-45deg);
-    }
-}
-
-//media-query for tablets
-@media (min-width: 768px) and (max-width: 1024px) {
-    .outer-container {
-        max-width: 703px;
-        padding: 0;
-    }
-    .team-presentation {
-        padding-top: 233px;
-    }
-    .leading-block {
-        &__title>h1 {
-            font-weight: 900;
-            font-size: 56px;
-            line-height: 130%;
-        }
-        &__subtitle {
-            padding: 0;
-        }
-        &__join {
-            margin-top: 64px;
-        }
-    }
-    .join-block {
-        border: none;
-        flex-direction: column;
-        padding: 0;
-        &__link {
-            @include speech-bubble-left(60px, #7673fe, 3px, 30px);
-            justify-content: center;
-            margin-top: 24px;
-            &-telegram {
-                @include speech-bubble-right(60px, $green1, 3px, 30px);
-                &>img {
-                    filter: invert(81%) sepia(61%) saturate(410%) hue-rotate(63deg) brightness(103%) contrast(98%);
-                }
-            }
-        }
-    }
-}
-
-//for mobile devices
-@media (max-width: 767px) {
-    .outer-container {
-        max-width: 100%;
-        padding: 0 10px;
-        .container {
-            padding: 0;
-        }
-    }
-    .team-presentation {
-        padding-top: 132px;
-    }
-    .leading-block {
-        &__title>h1 {
-            font-size: 24px;
-            font-weight: 800;
-            line-height: 130%;
-            word-break: break-word;
-        }
-        &__subtitle {
-            font-size: 18px;
-            line-height: 133%;
-            padding: 0;
-        }
-        &__join {
-            margin-top: 32px;
-        }
-    }
-    .join-block {
-        border: none;
-        flex-direction: column;
-        padding: 0;
         &__label {
-            display: none;
+            font-weight: 700;
+            line-height: 64px;
         }
         &__link {
-            @include speech-bubble-left(33px, #7673fe, 2px, 12px);
-            justify-content: center;
-            margin-top: 8px;
-            &-discord {
-                margin-top: 0;
+            align-items: center;
+            display: flex;
+            &>span {
+                font-weight: 500;
+                margin-left: 6px;
+                text-decoration-line: underline;
             }
-            &-telegram {
-                @include speech-bubble-right(33px, $green1, 2px, 12px);
-                &>img {
-                    filter: invert(81%) sepia(61%) saturate(410%) hue-rotate(63deg) brightness(103%) contrast(98%);
+        }
+        &__icon {
+            filter: invert(47%) sepia(97%) saturate(3540%) hue-rotate(224deg) brightness(109%) contrast(99%);
+            &>:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .avatars {
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            &-sm {
+                margin: 0 auto;
+                max-width: 1103px;
+            }
+            @each $name,
+            $color in $colors {
+                .bg-#{$name} {
+                    background-color: $color;
                 }
             }
         }
-        &__contact {
-            @include body2-font;
+        &__item {
+            flex: 0 2 234px;
+            height: 234px;
+            position: relative;
+            transform: rotate( 45deg);
+            overflow: hidden;
+            border-radius: 94px;
+            &>picture {
+                &>img {
+                    object-fit: cover;
+                    transform: rotate(-45deg);
+                    top: -10px;
+                    left: -9px;
+                    height: 108%;
+                    position: absolute;
+                }
+            }
         }
     }
-}
+
+    //media-query for tablets
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .outer-container {
+            max-width: 703px;
+            padding: 0;
+        }
+        .team-presentation {
+            padding-top: 233px;
+        }
+        .leading-block {
+            &__title>h1 {
+                font-weight: 900;
+                font-size: 56px;
+                line-height: 130%;
+            }
+            &__subtitle {
+                padding: 0;
+            }
+            &__join {
+                margin-top: 64px;
+            }
+        }
+        .join-block {
+            border: none;
+            flex-direction: column;
+            padding: 0;
+            &__link {
+                @include speech-bubble-left(60px, #7673fe, 3px, 30px);
+                justify-content: center;
+                margin-top: 24px;
+                &-telegram {
+                    @include speech-bubble-right(60px, $green1, 3px, 30px);
+                    &>img {
+                        filter: invert(81%) sepia(61%) saturate(410%) hue-rotate(63deg) brightness(103%) contrast(98%);
+                    }
+                }
+            }
+        }
+    }
+
+    //for mobile devices
+    @media (max-width: 767px) {
+        .outer-container {
+            max-width: 100%;
+            padding: 0 10px;
+            .container {
+                padding: 0;
+            }
+        }
+        .team-presentation {
+            padding-top: 132px;
+        }
+        .leading-block {
+            &__title>h1 {
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 130%;
+                word-break: break-word;
+            }
+            &__subtitle {
+                font-size: 18px;
+                line-height: 133%;
+                padding: 0;
+            }
+            &__join {
+                margin-top: 32px;
+            }
+        }
+        .join-block {
+            border: none;
+            flex-direction: column;
+            padding: 0;
+            &__label {
+                display: none;
+            }
+            &__link {
+                @include speech-bubble-left(33px, #7673fe, 2px, 12px);
+                justify-content: center;
+                margin-top: 8px;
+                &-discord {
+                    margin-top: 0;
+                }
+                &-telegram {
+                    @include speech-bubble-right(33px, $green1, 2px, 12px);
+                    &>img {
+                        filter: invert(81%) sepia(61%) saturate(410%) hue-rotate(63deg) brightness(103%) contrast(98%);
+                    }
+                }
+            }
+            &__contact {
+                @include body2-font;
+            }
+        }
+    }

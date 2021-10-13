@@ -78,6 +78,12 @@
         $color in $colors {
             .bg-#{$name} {
                 background-color: $color;
+                &:hover,
+                &:active {
+                    -webkit-box-shadow: 4px 0px 100px -37px $color;
+                    -moz-box-shadow: 4px 0px 100px -37px $color;
+                    box-shadow: 4px 0px 100px -37px $color;
+                }
             }
         }
     }
@@ -88,6 +94,11 @@
         transform: rotate(45deg);
         overflow: hidden;
         border-radius: 94px;
+        &>span {
+            bottom: 17px;
+            position: absolute;
+            left: 48px;
+        }
         &>picture {
             &>img {
                 object-fit: cover;
@@ -96,8 +107,31 @@
                 left: -9px;
                 height: 108%;
                 position: absolute;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
+        .normal-olga {
+            opacity: 1;
+            //it will be need to small animation
+            //with another avatar of Olga
+            // &:hover {
+            //     opacity: 0;
+            // }
+        }
+        //it will be need to small animation
+        //with another avatar of Olga
+        // .alter-ego {
+        //     opacity: 0;
+        //     &__img {
+        //         left: 3px;
+        //         top: -21px;
+        //     }
+        //     &:hover {
+        //         opacity: 1;
+        //     }
+        // }
     }
 }
 

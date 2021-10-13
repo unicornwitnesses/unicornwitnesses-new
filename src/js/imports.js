@@ -51,6 +51,8 @@ import '../assets/img/avatars/olga_nayda100x100.png';
 import '../assets/img/avatars/olga_nayda100x100.webp';
 import '../assets/img/avatars/olga_nayda.png';
 import '../assets/img/avatars/olga_nayda.webp';
+import '../assets/img/avatars/olga_nayda2.png';
+import '../assets/img/avatars/olga_nayda2.webp';
 import '../assets/img/avatars/nikita_khristenko.webp';
 import '../assets/img/avatars/nikita_khristenko.png';
 import '../assets/img/avatars/maxim_litvinov.png';

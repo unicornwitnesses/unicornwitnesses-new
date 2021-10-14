@@ -3,17 +3,18 @@
 @import "./colors.scss";
 @import "./mixins.scss";
 @import './sections/team-presentation.scss';
+@import './sections/principles.scss';
 *,
 *::before,
 *::after {
     @include body1-font;
     box-sizing: border-box;
     color: #fff;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
     background-color: #000;
-    height: 100vh;
 }
 
 h1 {
@@ -24,18 +25,18 @@ h1 {
 }
 
 h2 {
-    font-family: "noto_sans_bold", sans-serif;
     font-size: 48px;
     font-weight: bold;
     line-height: 133%;
+    margin: 0;
 }
 
 h3,
 h4 {
-    font-family: "noto_sans_bold", sans-serif;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 130%;
+    margin: 0;
 }
 
 ul {
@@ -67,6 +68,7 @@ a {
 // media-query for tablets
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .container {
-        max-width: 720px;
+        max-width: 703px;
+        padding: 0;
     }
 }

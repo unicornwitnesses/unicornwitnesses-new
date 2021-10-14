@@ -1,0 +1,32 @@
+.principles {
+    padding: 102px 0 160px;
+    &__text {
+        padding-right: 318px;
+    }
+    &__descr {
+        color: #f2f2f2;
+        margin-top: 1em;
+        word-break: break-word;
+    }
+    &__cta {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.7em;
+        max-width: 720px;
+    }
+    &__btn {
+        padding: 24px 48px;
+        display: inline-flex;
+        background-color: $yellow-hover;
+        border-radius: 30px;
+        color: #000;
+        .icon {
+            // display: inline-flex;
+        }
+    }
+    .button-reverse {
+        background-color: #000;
+        border: 2px solid yellow;
+        color: inherit;
+    }
+}

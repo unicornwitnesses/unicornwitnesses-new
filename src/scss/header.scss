@@ -160,6 +160,14 @@
             }
         }
     }
+    .content {
+        animation: moveWindowRight 0.3s 1;
+        &.active {
+            display: grid;
+            animation: moveWindowLeft 0.3s 1;
+            left: 0;
+        }
+    }
     .socials {
         grid-area: gridItem1;
     }
@@ -305,6 +313,7 @@
             height: 100vh;
         }
         .content {
+            animation: moveWindowLeft 0.3s 1;
             align-content: space-between;
             background-color: #000;
             display: grid;

@@ -1,30 +1,42 @@
 .outer-container {
     margin: 0 auto;
-    max-width: 1550px;
-    padding: 0 15px;
+    max-width: 100%;
+    padding: 0 10px;
+
+    .container {
+        padding: 0;
+    }
 }
 
 .team-presentation {
-    padding-top: 195px;
+    padding-top: 132px;
+
     &__avatar-block {
         margin: 100px auto 0 auto;
     }
 }
 
 .leading-block {
+    &__title>h1 {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 130%;
+        word-break: break-word;
+    }
     &__subtitle {
         color: $gray;
         // fill some color in svg-icons. great thanks to https://codepen.io/sosuke/pen/Pjoqqp
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        font-size: 36px;
+        font-size: 18px; 
+        
         font-weight: 400;
-        line-height: 48px;
+        line-height: 133%;
         margin-top: 40px;
         padding-right: 309px;
     }
     &__join {
         @include speech-bubble-left(60px, #7673fe, 3px, 30px);
-        margin-top: 80px;
+        margin-top: 32px;
         max-width: 950px;
         padding-left: 60px;
         padding-right: 60px;
@@ -32,14 +44,19 @@
 }
 
 .join-block {
+    border: none;
     @include body1-font;
     display: flex;
+    flex-direction: column;
+    padding: 0;
     justify-content: space-between;
     &__label {
-        font-weight: 700;
-        line-height: 64px;
+        display: none;
     }
     &__link {
+        @include speech-bubble-left(33px, #7673fe, 2px, 12px);
+        justify-content: center;
+        margin-top: 8px;
         align-items: center;
         display: flex;
         &>span {
@@ -47,6 +64,18 @@
             margin-left: 6px;
             text-decoration-line: underline;
         }
+        &-discord {
+            margin-top: 0;
+        }
+        &-telegram {
+            @include speech-bubble-right(33px, $green1, 2px, 12px);
+            &>img {
+                filter: invert(81%) sepia(61%) saturate(410%) hue-rotate(63deg) brightness(103%) contrast(98%);
+            }
+        }
+    }
+    &__contact {
+        @include body2-font;
     }
     &__icon {
         filter: invert(47%) sepia(97%) saturate(3540%) hue-rotate(224deg) brightness(109%) contrast(99%);
@@ -99,7 +128,7 @@
 }
 
 //media-query for tablets
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
     .outer-container {
         max-width: 703px;
         padding: 0;
@@ -114,6 +143,8 @@
             line-height: 130%;
         }
         &__subtitle {
+            line-height: 48px;
+            font-size: 36px;
             padding: 0;
         }
         &__join {
@@ -121,9 +152,11 @@
         }
     }
     .join-block {
-        border: none;
-        flex-direction: column;
-        padding: 0;
+        &__label {
+            display: block;
+            font-weight: 700;
+            line-height: 64px;
+        }
         &__link {
             @include speech-bubble-left(60px, #7673fe, 3px, 30px);
             justify-content: center;
@@ -138,57 +171,21 @@
     }
 }
 
-//for mobile devices
-@media (max-width: 767px) {
+@media (min-width: 1024px) {
     .outer-container {
-        max-width: 100%;
-        padding: 0 10px;
-        .container {
-            padding: 0;
-        }
+        max-width: 1550px;
+        padding: 0 15px;
     }
+
     .team-presentation {
-        padding-top: 132px;
+        padding-top: 195px;
     }
+
     .leading-block {
-        &__title>h1 {
-            font-size: 24px;
-            font-weight: 800;
-            line-height: 130%;
-            word-break: break-word;
-        }
+        margin-top: 80px;
+
         &__subtitle {
-            font-size: 18px;
-            line-height: 133%;
             padding: 0;
-        }
-        &__join {
-            margin-top: 32px;
-        }
-    }
-    .join-block {
-        border: none;
-        flex-direction: column;
-        padding: 0;
-        &__label {
-            display: none;
-        }
-        &__link {
-            @include speech-bubble-left(33px, #7673fe, 2px, 12px);
-            justify-content: center;
-            margin-top: 8px;
-            &-discord {
-                margin-top: 0;
-            }
-            &-telegram {
-                @include speech-bubble-right(33px, $green1, 2px, 12px);
-                &>img {
-                    filter: invert(81%) sepia(61%) saturate(410%) hue-rotate(63deg) brightness(103%) contrast(98%);
-                }
-            }
-        }
-        &__contact {
-            @include body2-font;
         }
     }
 }

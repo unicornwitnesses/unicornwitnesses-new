@@ -1,0 +1,27 @@
+@mixin body1-font {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+@mixin body2-font {
+    font-size: 16px;
+}
+
+@mixin body2-link {
+    text-decoration-line: underline;
+}
+
+@mixin speech-bubble-left ($radius-property, $border-color, $border-width, $padding) {
+    border: $border-width solid $border-color;
+    border-radius: 0 $radius-property $radius-property $radius-property;
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin speech-bubble-right ($radius-property, $border-color, $border-width, $padding) {
+    border: $border-width solid $border-color;
+    border-radius: $radius-property 0 $radius-property $radius-property;
+    padding-top: $padding;
+    padding-bottom: $padding;
+}

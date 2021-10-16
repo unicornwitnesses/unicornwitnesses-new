@@ -1,0 +1,13 @@
+import '../assets/img/logo.svg';
+import '../assets/img/header/logo-unicorn-witnesses.svg';
+import '../assets/img/header/icons/angellist.svg';
+import '../assets/img/header/icons/arrow-down.svg';
+import '../assets/img/header/icons/cb.svg';
+import '../assets/img/header/icons/facebook.svg';
+import '../assets/img/header/icons/github.svg';
+import '../assets/img/header/icons/instagram.svg';
+import '../assets/img/header/icons/linkedin.svg';
+import '../assets/img/header/icons/producthunt.svg';
+import '../assets/img/header/icons/russian_flag.svg';
+import '../assets/img/header/icons/telegram.svg';
+import '../assets/img/header/icons/twitter.svg';

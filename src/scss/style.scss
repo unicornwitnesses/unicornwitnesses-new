@@ -1,8 +1,9 @@
 @import "~normalize.css";
-@import "./fonts.scss";
 @import "./colors.scss";
+@import "./fonts.scss";
 @import "./mixins.scss";
 @import './sections/team-presentation.scss';
+@import "./header.scss";
 *,
 *::before,
 *::after {
@@ -13,7 +14,6 @@
 
 body {
     background-color: #000;
-    height: 100vh;
 }
 
 h1 {
@@ -51,6 +51,19 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 // declare container-block
 .container {
     margin: 0 auto;
@@ -64,7 +77,6 @@ a {
     }
 }
 
-// media-query for tablets
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .container {
         max-width: 720px;

@@ -1,0 +1,66 @@
+.principles {
+    padding: 102px 0 160px;
+    &__text {
+        padding-right: 318px;
+    }
+    &__descr {
+        color: #f2f2f2;
+        margin-top: 1em;
+        word-break: break-word;
+    }
+    &__cta {
+        display: flex;
+        grid-gap: 16px;
+        justify-content: flex-start;
+        margin-top: 2.7em;
+    }
+    &__btn {
+        padding: 24px 48px;
+        display: inline-flex;
+        align-items: center;
+        background-color: $yellow-hover;
+        border-radius: 30px;
+        color: #000;
+    }
+    .button-reverse {
+        background-color: #000;
+        border: 2px solid yellow;
+        color: inherit;
+    }
+}
+
+//media-query for tablets
+@media (min-width: 768px) and (max-width: 1024px) {
+    .principles__text {
+        padding: 0;
+    }
+}
+
+//for mobile devices
+@media (max-width: 767px) {
+    .principles {
+        &__text {
+            padding: 0;
+        }
+        &__title>h2 {
+            font-size: 1em;
+            font-weight: 800;
+            line-height: 130%;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+        &__cta {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        &__btn {
+            font-size: 16px;
+            line-height: 150%;
+            padding: 12px 25px;
+        }
+    }
+    .button-reverse {
+        justify-content: center;
+    }
+}

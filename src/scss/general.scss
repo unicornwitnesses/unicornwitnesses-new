@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    @include body1-font;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 110%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 133%;
+    margin: 0;
+}
+
+h3,
+h4 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// declare container-block
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+// media-query for tablets
+@media (min-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+}
+
+//media for desktop
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1270px;
+        padding: 0 15px;
+    }
+}

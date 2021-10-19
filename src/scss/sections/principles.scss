@@ -15,12 +15,15 @@
         margin-top: 2.7em;
     }
     &__btn {
-        padding: 24px 48px;
-        display: inline-flex;
         align-items: center;
         background-color: $yellow-hover;
         border-radius: 30px;
         color: #000;
+        display: inline-flex;
+        padding: 24px 48px;
+        &>span {
+            display: flex;
+        }
     }
     .button-reverse {
         background-color: #000;

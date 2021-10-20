@@ -21,10 +21,13 @@
         display: none;
         position: relative;
         justify-content: center;
+        height: 792px;
+        width: 608px;
+        margin: 0 auto;
     }
     &__img {
         height: 700px;
-        position: inherit;
+        position: absolute;
         top: 0;
         left: translateX(50%, -50%);
         width: 349px;
@@ -71,8 +74,8 @@
         padding: 64px 0 100px;
     }
     .column {
-        &:nth-child(2) {
-            padding-top: 156px;
+        &__txt {
+            padding-top: 64px;
         }
         &__img-block {
             display: flex;
@@ -92,6 +95,17 @@
         }
         &__cta>img {
             margin-left: 6px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .story-block {
+        flex-direction: row;
+    }
+    .column {
+        &__txt {
+            padding: 274px 0 314px 128px;
         }
     }
 }

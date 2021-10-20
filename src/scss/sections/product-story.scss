@@ -8,14 +8,8 @@
     0% {
         margin-left: 4px;
     }
-    25% {
-        margin-left: 8px;
-    }
     50% {
         margin-left: 12px;
-    }
-    75% {
-        margin-left: 8px;
     }
     100% {
         margin-left: 4px;
@@ -23,10 +17,33 @@
 }
 
 .column {
-    &__img {
+    &__img-block {
         display: none;
+        position: relative;
+        justify-content: center;
     }
-    &__txt {}
+    &__img {
+        height: 700px;
+        position: inherit;
+        top: 0;
+        left: translateX(50%, -50%);
+        width: 349px;
+        z-index: 2;
+        &>img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__color-block {
+        background-color: $yellow;
+        border-radius: 35%;
+        height: 608px;
+        width: 608px;
+        position: absolute;
+        top: 184px;
+        z-index: 1;
+    }
     &__title {
         font-size: 24px;
         font-weight: 800;
@@ -44,8 +61,37 @@
             @include body2-font;
         }
         &>img {
-            margin-left: 4px;
-            animation: arrow-move 1.5s infinite;
+            animation: arrow-move 2s infinite;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .story-block {
+        padding: 64px 0 100px;
+    }
+    .column {
+        &:nth-child(2) {
+            padding-top: 156px;
+        }
+        &__img-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 64px;
+        }
+        &__descr {
+            @include body1-font;
+        }
+        &__cta>a {
+            @include body1-font;
+        }
+        &__cta>img {
+            margin-left: 6px;
         }
     }
 }

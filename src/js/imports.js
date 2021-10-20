@@ -69,3 +69,5 @@ import '../assets/img/avatars/aleksandr_verevkin.webp';
 import '../assets/img/avatars/pavel_petrov.png';
 import '../assets/img/avatars/pavel_petrov.webp';
 import '../assets/img/icons/arrow-right.svg';
+import '../assets/img/iphone-mockup.webp';
+import '../assets/img/iphone-mockup.png';

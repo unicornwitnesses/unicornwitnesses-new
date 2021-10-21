@@ -13,6 +13,7 @@
       {
         "ignorePseudoClasses": ["global", "local"]
       }
-    ]
+    ],
+    "indentation": "tab"
   }
 }

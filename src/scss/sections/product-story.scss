@@ -131,6 +131,9 @@
 	}
 
 	.description__list {
+		color: $purple-light;
+		padding-left: 40px;
+
 		& > li {
 			color: $purple-light;
 			list-style-type: disc;

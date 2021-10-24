@@ -1,4 +1,5 @@
-import '../assets/img/logo.svg';
+import '../assets/img/logo.png';
+import '../assets/img/logo_110x60.png';
 import '../assets/img/icons/angellist.svg';
 import '../assets/img/icons/arrow-down.svg';
 import '../assets/img/icons/cb.svg';
@@ -68,3 +69,4 @@ import '../assets/img/avatars/aleksandr_verevkin.png';
 import '../assets/img/avatars/aleksandr_verevkin.webp';
 import '../assets/img/avatars/pavel_petrov.png';
 import '../assets/img/avatars/pavel_petrov.webp';
+import '../assets/img/icons/globe.svg';

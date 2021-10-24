@@ -17,7 +17,11 @@
         <div class="container">
             <div class="header__body">
                 <a href="" class="header__logo">
-                    <img src="./assets/img/logo.svg" alt="Logo of unicorn-witnesses">
+                    <picture>
+                        <source media="(min-width: 767px)" srcset="./assets/img/logo.png">
+                        <img src="./assets/img/logo_110x60.png" alt="Logo of unicorn-witnesses">
+                    </picture>
+
                 </a>
                 <div class="header__content content">
                     <nav class="content__nav menu">
@@ -63,7 +67,7 @@
                         <a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
                             <img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
                         </a>
-                        <a href="https://facebook.com/" target="blank" rel="noopener noreferrer" class="socials__link">
+                        <a href="https://facebook.com/" target="blank" rel="noopener noreferrer" class="socials__link socials__link_facebook">
                             <img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img fb">
                         </a>
                         <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
@@ -269,16 +273,101 @@
                 </div>
             </div>
         </section>
-        <section class="product-story"></section>
-        <section class="team-story"></section>
-        <section class="team-speaches">
+        <section class="product-story">
+            <div class='container'>
+                <div class='story-block'>
+                    <div class='story-block__col column'>
+                        <div class='column__img-block'>
+                            <div class='column__img'>
+                                <picture>
+                                    <source srcset='./assets/img/iphone-mockup.webp' type='image/webp'>
+                                    <source srcset='./assets/img/iphone-mockup.png' type='image/png'>
+                                    <img src='./assets/img/iphone-mockup.webp' alt='Изображение телефона'>
+                                </picture>
+                            </div>
+                            <div class='column__color-block'></div>
+                        </div>
+                    </div>
+                    <div class='story-block__col column'>
+                        <div class='column__txt'>
+                            <div class='column__title'>
+                                История Muteit.app
+                            </div>
+                            <div class='column__descr'>
+                                Это первый продукт, который комьюнити UW взялась развивать. У Оли Найда появилась идея, мы её подхватили. Вместе хотим заботиться о людях с синдромом «стеснительного мочевого пузыря»
+                            </div>
+                            <div class='column__cta'>
+                                <a>Muteit.app</a>
+                                <img src='./assets/img/icons/arrow-right.svg' alt=''>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-story">
+            <div class='container'>
+                <div class='story-block story-block_team'>
+                    <div class='story-block__col column column_team'>
+                        <div class='column__img-block column__img-block_team'>
+                            <div class='column__img column__img_logo'>
+                                <img src='./assets/img/logo.png' alt='Логотип организации'>
+                            </div>
+                            <div class='column__color-block column__color-block_purple'></div>
+                        </div>
+                    </div>
+                    <div class='story-block__col column'>
+                        <div class='column__txt column__txt_team'>
+                            <div class='column__title column__title_team'>
+                                Почему объединились?
+                            </div>
+                            <div class='column__descr column__descr_team'>
+                                У каждого внутри сформировалась потребность в заполнении пустоты значимыми и реально помогающими людям ценностями и действиями. Unicorn Witnesses это про путь. Команда это тоже про путь.
+                                <ul class='description__list'>
+                                    <li>Путь объединяет команду и комьюнити и делает одним целым.
+                                    </li>
+                                    <li>Ценности здоровья, экологии.</li>
+                                    <li>Некоммерческое сотрудничество и независимость</li>
+                                </ul>
+                            </div>
+                            <div class='column__cta column__cta_team'>
+                                <a>Полная история
+                                    Unicorn Witnesses
+                                </a>
+                                <img src='./assets/img/icons/arrow-right.svg' alt=''>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-speaches speaches">
             <div class="container">
                 <div class="speaches__block">
                     <div class="speaches__title">
                         А это наши голоса
                     </div>
                     <ul class="speaches__list">
-                        <div class="speaches__item"></div>
+                        <li class="speaches__item speach">
+                            <div class="speach__caption caption">
+                                <div class="caption__img-wrapper">
+                                    <picture>
+                                        <source>
+                                        <img class="caption__img"></img>
+                                    </picture>
+                                </div>
+                                <div class="caption__content">
+                                    <div class="caption__fullname">Алексей Долгих</div>
+                                    <div class="caption__position">CTO, Quality assurance</div>
+                                    <div class="caption__socials socials">
+                                        <a href="" class="socials__link">
+                                            <img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speach__text"></div>
+                        </li>
                     </ul>
                 </div>
             </div>

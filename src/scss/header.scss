@@ -1,4 +1,4 @@
-@keyframes moveWindowLeft {
+@keyframes moveLeft {
     0% {
         left: 100vw;
     }
@@ -7,7 +7,7 @@
     }
 }
 
-@keyframes moveWindowRight {
+@keyframes moveRight {
     0% {
         left: 0;
     }
@@ -47,22 +47,21 @@
     }
     &__content {
         align-content: space-between;
-        animation: moveWindowRight 0.3s 1;
+        transition: all 0.3s ease;
         background-color: #000;
-        display: none;
+        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, max-content);
         height: 100vh;
         padding: 15px 20px 29px 14px;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 100vw;
         z-index: 2;
         grid-template-areas: 'menu' 'socials' 'lang' 'mail';
         width: 100vw;
         &.active {
             display: grid;
-            animation: moveWindowLeft 0.3s 1;
             left: 0;
         }
     }

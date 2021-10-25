@@ -89,7 +89,7 @@
             word-wrap: break-word;
             .description__list {
                 color: $purple-light;
-                padding-left: 20px;
+                padding: 0 5px 0 20px;
                 &>li {
                     @include body2-font;
                     color: $purple-light;

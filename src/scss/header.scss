@@ -205,37 +205,6 @@
                 height: 50vh;
             }
         }
-        &__content {
-            left: 0;
-            height: 100%;
-            align-content: space-between;
-            position: relative;
-            grid-template-rows: repeat(2, max-content);
-            grid-template-areas: 'lang' 'socials';
-            grid-gap: 50px;
-            flex: 0 1 355px;
-            padding: 0;
-            width: 100%;
-            .active {
-                height: 50%;
-                .menu {
-                    display: block;
-                }
-            }
-        }
-    }
-    .content {
-        &.active {
-            .content__menu {
-                display: block;
-            }
-        }
-    }
-    .menu {
-        display: none;
-    }
-    .mail {
-        display: none;
     }
     .socials {}
 }

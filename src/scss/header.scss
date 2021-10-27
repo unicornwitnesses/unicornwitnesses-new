@@ -37,6 +37,7 @@
     }
     &__logo {
         display: inline-block;
+        position: relative;
         min-height: 60px;
         &>picture {
             display: flex;
@@ -46,10 +47,10 @@
         }
     }
     &__content {
-        align-content: space-between;
         transition: all 0.3s ease;
         background-color: #000;
         display: grid;
+        row-gap: 40px;
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, max-content);
         height: 100vh;
@@ -202,13 +203,11 @@
             flex-direction: row;
             flex-wrap: nowrap;
             .active {
-                height: 50vh;
+                // height: 50vh;
             }
         }
     }
     .socials {}
 }
-
-@media (min-width: 1025px) {}
 
 @media (min-width: 1025px) {}

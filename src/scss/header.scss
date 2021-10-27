@@ -37,9 +37,7 @@
     }
     &__logo {
         display: inline-block;
-        position: relative;
         min-height: 60px;
-        z-index: 9;
         &>picture {
             display: flex;
             &>img {
@@ -204,7 +202,7 @@
             flex-direction: row;
             flex-wrap: nowrap;
             .active {
-                // height: 50vh;
+                height: 50vh;
             }
         }
         &__content {
@@ -220,6 +218,16 @@
             width: 100%;
             .active {
                 height: 50%;
+                .menu {
+                    display: block;
+                }
+            }
+        }
+    }
+    .content {
+        &.active {
+            .content__menu {
+                display: block;
             }
         }
     }
@@ -231,5 +239,7 @@
     }
     .socials {}
 }
+
+@media (min-width: 1025px) {}
 
 @media (min-width: 1025px) {}

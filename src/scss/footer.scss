@@ -1,0 +1,51 @@
+.footer {
+    padding: 65px 26px 86px 0;
+    &__block {
+        display: grid;
+    }
+    &__content {
+        padding-top: 15px;
+        .mail {
+            &__descr {
+                color: #f0f0f0;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            &__link {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .socials {
+            padding: 25px 0;
+            row-gap: 15px;
+            justify-content: space-between;
+            &__link {
+                display: flex;
+                flex: 0 0 50%;
+                margin: 0;
+                &>span {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+    .menu {
+        &__map-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__list {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .footer {
+        padding: 48px 0 12px;
+    }
+}
+
+@media (min-width: 767px) {}

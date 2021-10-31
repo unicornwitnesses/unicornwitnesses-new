@@ -210,4 +210,38 @@
     .socials {}
 }
 
-@media (min-width: 1025px) {}
+@media (min-width: 1025px) {
+    .header {
+        padding-bottom: 0;
+        &__content {
+            grid-template-areas: 'menu lang' 'mail socials';
+            grid-template-columns: minmax(max-content, 634px) 1fr;
+            grid-template-rows: repeat(2, min-content);
+            height: min-content;
+            padding-bottom: 0;
+            position: static;
+            row-gap: 15px;
+        }
+    }
+    .menu {
+        &__list {
+            flex-direction: row;
+        }
+    }
+    .lang {
+        justify-content: flex-end;
+    }
+    .burger {
+        display: none;
+    }
+    .socials {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        &__link {
+            margin: 0;
+        }
+    }
+}

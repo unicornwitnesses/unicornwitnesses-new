@@ -45,7 +45,58 @@
 @media (min-width: 767px) {
     .footer {
         padding: 48px 0 12px;
+        &__block {
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
+            // grid-template-areas: 'logo mail' 'socials socials' 'menu menu';
+        }
+        &__content {
+            padding-top: 32px;
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
+            // grid-template-areas: '. mail' 'socials socials' 'menu menu';
+            .mail {
+                &__descr {
+                    @include body1-font;
+                }
+                &__link {
+                    @include body1-font;
+                }
+            }
+            .socials {
+                display: flex;
+                padding: 40px 0;
+                row-gap: 40px;
+                justify-content: flex-start;
+                &__link {
+                    flex-basis: auto;
+                    padding-right: 24px;
+                }
+            }
+        }
+        .menu {
+            display: flex;
+            height: 168px;
+            gap: 80px;
+            width: 477px;
+            &__map-list {
+                flex: 1 1 33.333%;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            &__list {
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 66.666%;
+                flex-wrap: wrap;
+                // margin-left: 80px;
+                column-gap: 80px;
+                // height: 100%;
+                justify-content: flex-start;
+            }
+        }
     }
 }
 
-@media (min-width: 767px) {}
+@media (min-width: 1025px) {}

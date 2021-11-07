@@ -56,6 +56,14 @@ import '../assets/img/avatars/100/nikita_khristenko.webp';
 import '../assets/img/avatars/100/olya_nayda.webp';
 import '../assets/img/avatars/100/pavel_petrov.webp';
 
+import '../assets/img/avatars/108/andrey_anufr.png';
+import '../assets/img/avatars/108/alex_dolgikh.png';
+import '../assets/img/avatars/108/olya_nayda.png';
+
+import '../assets/img/avatars/108/andrey_anufr.webp';
+import '../assets/img/avatars/108/alex_dolgikh.webp';
+import '../assets/img/avatars/108/olya_nayda.webp';
+
 import '../assets/img/avatars/150/andrey_anufr.png';
 import '../assets/img/avatars/150/alena_korsunova.png';
 import '../assets/img/avatars/150/alex_dolgikh.png';

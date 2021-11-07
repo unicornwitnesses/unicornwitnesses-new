@@ -2,378 +2,558 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
-    <title>
-        <%= htmlWebpackPlugin.options.title %>
-    </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__body">
-                <a href="" class="header__logo">
-                    <picture>
-                        <source media="(min-width: 767px)" srcset="./assets/img/logo.png">
-                        <img src="./assets/img/logo_110x60.png" alt="Logo of unicorn-witnesses">
-                    </picture>
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="" class="header__logo">
+					<picture>
+						<source media="(min-width: 767px)" srcset="./assets/img/logo.png">
+						<img src="./assets/img/logo_110x60.png" alt="Logo of unicorn-witnesses">
+					</picture>
 
-                </a>
-                <div class="header__content content">
-                    <nav class="content__nav menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Продукты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">О нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Присоединиться</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Поддержать</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Блог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="content__lang lang">
-                        <span class="lang__speech">Мы говорим:</span>
-                        <div class="lang__select">
-                            <img src="./assets/img/icons/russian_flag.svg" alt="Russian flag">
-                        </div>
-                        <span class="lang__arrow">
-                            <img src="./assets/img/icons/arrow-down.svg" alt="arrow down">
-                        </span>
-                    </div>
-                    <div class="content__mail mail">
-                        <div class="mail__descr">
-                            Сразу готовы с нами пообщаться? Напишите сюда:
-                        </div>
-                        <a href="mailto:help@unicornwitnesses.com" class="mail__link">
-                            help@unicornwitnesses.com
-                        </a>
-                    </div>
-                    <div class="content__socials socials">
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
-                            <img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
-                        </a>
-                        <a href="https://facebook.com/" target="blank" rel="noopener noreferrer" class="socials__link socials__link_facebook">
-                            <img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img fb">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
-                        </a>
-                        <a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
-                        </a>
-                        <a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
-                        </a>
-                        <a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="header__burger burger">
-                    <div class="burger__label">Меню</div>
-                    <div class="burger__button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="team-presentation">
+				</a>
+				<div class="header__content content">
+					<nav class="content__nav menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Продукты</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Присоединиться</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Поддержать</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Блог</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="content__lang lang">
+						<span class="lang__speech">Мы говорим:</span>
+						<div class="lang__select">
+							<img src="./assets/img/icons/russian_flag.svg" alt="Russian flag">
+						</div>
+						<span class="lang__arrow">
+							<img src="./assets/img/icons/arrow-down.svg" alt="arrow down">
+						</span>
+					</div>
+					<div class="content__mail mail">
+						<div class="mail__descr">
+							Сразу готовы с нами пообщаться? Напишите сюда:
+						</div>
+						<a href="mailto:help@unicornwitnesses.com" class="mail__link">
+							help@unicornwitnesses.com
+						</a>
+					</div>
+					<div class="content__socials socials">
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+							<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+						</a>
+						<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+							class="socials__link socials__link_facebook">
+							<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img fb">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+						</a>
+						<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+						</a>
+						<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+							class="socials__link">
+							<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+						</a>
+						<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+							class="socials__link">
+							<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+						</a>
+					</div>
+				</div>
+				<div class="header__burger burger">
+					<div class="burger__label">Меню</div>
+					<div class="burger__button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="team-presentation">
 
-            <div class="container">
-                <div class="team-presentation__leading-block leading-block">
-                    <div class="leading-block__text">
-                        <div class="leading-block__title">
-                            <h1>
-                                Мы объединились и создаём социально-значимые цифровые продукты
-                            </h1>
-                        </div>
-                        <div class="leading-block__subtitle">
-                            Нам нравится помогать людям: делимся знаниями, генерируем идеи и воплощаем их в жизнь.
-                        </div>
-                    </div>
-                    <div class="leading-block__join join-block">
-                        <span class="join-block__label">
+			<div class="container">
+				<div class="team-presentation__leading-block leading-block">
+					<div class="leading-block__text">
+						<div class="leading-block__title">
+							<h1>
+								Мы объединились и создаём социально-значимые цифровые продукты
+							</h1>
+						</div>
+						<div class="leading-block__subtitle">
+							Нам нравится помогать людям: делимся знаниями, генерируем идеи и воплощаем их в жизнь.
+						</div>
+					</div>
+					<div class="leading-block__join join-block">
+						<span class="join-block__label">
 							Говорят, наши чаты самые дружелюбные:
 						</span>
-                        <a href="" class="join-block__link join-block__link-discord">
-                            <img src="./assets/img/icons/discord.svg" class="join-block__icon" alt="Войти на наш сервер дискорда">
-                            <span class="join-block__contact">
+						<a href="" class="join-block__link join-block__link-discord">
+							<img src="./assets/img/icons/discord.svg" class="join-block__icon" alt="Войти на наш сервер дискорда">
+							<span class="join-block__contact">
 								Discord
 							</span>
-                        </a>
-                        <a href="" class="join-block__link join-block__link-telegram">
-                            <img src="/assets/img/icons/telegram.svg" alt="" class="join-block__icon">
-                            <span class="join-block__contact">
-                                Telegram
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="outer-container">
-                <div class="team-presentation__avatar-block avatars">
-                    <div class="avatars__row avatars__row-sm">
-                        <div class="avatars__item item bg-red">
-                            <picture>
-                                <source src="./assets/img/avatars/aleksei_dolgikh.png" type="image/png">
-                                <source src="./assets/img/avatars/aleksei_dolgikh.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/aleksei_dolgikh.webp" alt="Алексей Долгих" title="Это Алексей Долгих">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-helium">
-                            <picture>
-                                <source src="./assets/img/avatars/alena_korsunova.png" type="image/png">
-                                <source src="./assets/img/avatars/alena_korsunova.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/alena_korsunova.webp" alt="Алена Корсунова" title="Это Алена Корсунова">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-blue2">
-                            <picture>
-                                <source src="./assets/img/avatars/aleksandr_verevkin.png" type="image/png">
-                                <source src="./assets/img/avatars/aleksandr_verevkin.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/aleksandr_verevkin.webp" alt="Александр Веревкин" title="Это Александр Веревкин">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="avatars__row avatars__row-lg">
-                        <div class="avatars__item bg-salad-green">
-                            <picture>
-                                <source src="./assets/img/avatars/evgeny_khristenko.png" type="image/png">
-                                <source src="./assets/img/avatars/evgeny_khristenko.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/evgeny_khristenko.webp" alt="Евгений Христенко" title="Это Евгений Христенко">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-yellow">
-                            <picture>
-                                <source src="./assets/img/avatars/nikita_khristenko.png" type="image/png">
-                                <source src="./assets/img/avatars/nikita_khristenko.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/nikita_khristenko.webp" alt="Никита Христенко" title="Это Никита Христенко">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-green1">
-                            <picture>
-                                <source src="./assets/img/avatars/olga_nayda.png" type="image/png">
-                                <source src="./assets/img/avatars/olga_nayda.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/olga_nayda.webp" alt="Ольга Найда" title="Это Ольга Найда">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-magenta">
-                            <picture>
-                                <source src="./assets/img/avatars/julia_udovichenko.png" type="image/png">
-                                <source src="./assets/img/avatars/julia_udovichenko.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/julia_udovichenko.webp" alt="Юлия Удовиченко" title="Это Юлия Удовиченко">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="avatars__row avatars__row-sm">
-                        <div class="avatars__item bg-orange">
-                            <picture>
-                                <source src="./assets/img/avatars/andrei-anufrienko.png" type="image/png">
-                                <source src="./assets/img/avatars/andrei-anufrienko.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/andrei-anufrienko.webp" alt="Андрей Ануфриенко" title="Это Андрей Ануфриенко">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-purple2">
-                            <picture>
-                                <source src="./assets/img/avatars/maxim_litvinov.png" type="image/png">
-                                <source src="./assets/img/avatars/maxim_litvinov.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/maxim_litvinov.webp" alt="Максим Литвинов" title="Это Максим Литвинов">
-                            </picture>
-                        </div>
-                        <div class="avatars__item bg-peach-pink">
-                            <picture>
-                                <source src="./assets/img/avatars/sofia_bondar.png" type="image/png">
-                                <source src="./assets/img/avatars/sofia_bondar.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/sofia_bondar.webp" alt="Софья Бондарь" title="Это Софья Бондарь">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="avatars__row avatars__row-lg">
-                        <div class="avatars__item bg-salad-green">
-                            <picture>
-                                <source src="./assets/img/avatars/sofia_bondar.png" type="image/png">
-                                <source src="./assets/img/avatars/sofia_bondar.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/sofia_bondar.webp" alt="Софья Бондарь" title="Это Софья Бондарь">
-                            </picture>
-                        </div>
-                        <div class="avatars__item">
-                            <picture>
-                                <source src="./assets/img/avatars/sofia_bondar.png" type="image/png">
-                                <source src="./assets/img/avatars/sofia_bondar.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/sofia_bondar.webp" alt="Софья Бондарь" title="Это Софья Бондарь">
-                            </picture>
-                        </div>
-                        <div class="avatars__item">
-                            <picture>
-                                <source src="./assets/img/avatars/sofia_bondar.png" type="image/png">
-                                <source src="./assets/img/avatars/sofia_bondar.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/sofia_bondar.webp" alt="Софья Бондарь" title="Это Софья Бондарь">
-                            </picture>
-                        </div>
-                        <div class="avatars__item">
-                            <picture>
-                                <source src="./assets/img/avatars/sofia_bondar.png" type="image/png">
-                                <source src="./assets/img/avatars/sofia_bondar.webp" type="image/webp">
-                                <img class="item__img" src="./assets/img/avatars/sofia_bondar.webp" alt="Софья Бондарь" title="Это Софья Бондарь">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </section>
-        <section class="principles">
-            <div class="container">
-                <div class="principles__block">
-                    <div class="principles__text">
-                        <div class="principles__title">
-                            <h2>
-                                Становимся точкой входа в мир социально значимых цифровых продуктов
-                            </h2>
-                        </div>
-                        <div class="principles__descr">Наши ценности. Забота о пользователях: влюбляемся в проблему, а не в решение. Забота о друг-друге: помогаем сокомандникам с обучением, оборудованием, иногда вместе ездим на море 🌊 и кататься на лыжах ⛷🏂</div>
-                    </div>
-                    <div class="principles__cta">
-                        <a href="" class="principles__btn">
-                            <span>
-									<img src="./assets/img/icons/horse.svg" alt="horse icon">
-								</span> Присоединиться к команде
-                        </a>
-                        <a href="" class="principles__btn button-reverse">
-                                Задонатить
-                            </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="product-story">
-            <div class='container'>
-                <div class='story-block'>
-                    <div class='story-block__col column'>
-                        <div class='column__img-block'>
-                            <div class='column__img'>
-                                <picture>
-                                    <source srcset='./assets/img/iphone-mockup.webp' type='image/webp'>
-                                    <source srcset='./assets/img/iphone-mockup.png' type='image/png'>
-                                    <img src='./assets/img/iphone-mockup.webp' alt='Изображение телефона'>
-                                </picture>
-                            </div>
-                            <div class='column__color-block'></div>
-                        </div>
-                    </div>
-                    <div class='story-block__col column'>
-                        <div class='column__txt'>
-                            <div class='column__title'>
-                                История Muteit.app
-                            </div>
-                            <div class='column__descr'>
-                                Это первый продукт, который комьюнити UW взялась развивать. У Оли Найда появилась идея, мы её подхватили. Вместе хотим заботиться о людях с синдромом «стеснительного мочевого пузыря»
-                            </div>
-                            <div class='column__cta'>
-                                <a>Muteit.app</a>
-                                <img src='./assets/img/icons/arrow-right.svg' alt=''>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team-story">
-            <div class='container'>
-                <div class='story-block story-block_team'>
-                    <div class='story-block__col column column_team'>
-                        <div class='column__img-block column__img-block_team'>
-                            <div class='column__img column__img_logo'>
-                                <img src='./assets/img/logo.png' alt='Логотип организации'>
-                            </div>
-                            <div class='column__color-block column__color-block_purple'></div>
-                        </div>
-                    </div>
-                    <div class='story-block__col column'>
-                        <div class='column__txt column__txt_team'>
-                            <div class='column__title column__title_team'>
-                                Почему объединились?
-                            </div>
-                            <div class='column__descr column__descr_team'>
-                                У каждого внутри сформировалась потребность в заполнении пустоты значимыми и реально помогающими людям ценностями и действиями. Unicorn Witnesses это про путь. Команда это тоже про путь.
-                                <ul class='description__list'>
-                                    <li>Путь объединяет команду и комьюнити и делает одним целым.
-                                    </li>
-                                    <li>Ценности здоровья, экологии.</li>
-                                    <li>Некоммерческое сотрудничество и независимость</li>
-                                </ul>
-                            </div>
-                            <div class='column__cta column__cta_team'>
-                                <a>Полная история
-                                    Unicorn Witnesses
-                                </a>
-                                <img src='./assets/img/icons/arrow-right.svg' alt=''>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team-speaches speaches">
-            <div class="container">
-                <div class="speaches__block">
-                    <div class="speaches__title">
-                        А это наши голоса
-                    </div>
-                    <ul class="speaches__list">
-                        <li class="speaches__item speach">
-                            <div class="speach__caption caption">
-                                <div class="caption__img-wrapper">
-                                    <picture>
-                                        <source>
-                                        <img class="caption__img"></img>
-                                    </picture>
-                                </div>
-                                <div class="caption__content">
-                                    <div class="caption__fullname">Алексей Долгих</div>
-                                    <div class="caption__position">CTO, Quality assurance</div>
-                                    <div class="caption__socials socials">
-                                        <a href="" class="socials__link">
-                                            <img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="speach__text"></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer"></footer>
+						</a>
+						<a href="" class="join-block__link join-block__link-telegram">
+							<img src="/assets/img/icons/telegram.svg" alt="" class="join-block__icon">
+							<span class="join-block__contact">
+								Telegram
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="principles">
+			<div class="container">
+				<div class="principles__block">
+					<div class="principles__text">
+						<div class="principles__title">
+							<h2>
+								Становимся точкой входа в мир социально значимых цифровых продуктов
+							</h2>
+						</div>
+						<div class="principles__descr">Наши ценности. Забота о пользователях: влюбляемся в проблему, а не в решение.
+							Забота о друг-друге: помогаем сокомандникам с обучением, оборудованием, иногда вместе ездим на море 🌊 и
+							кататься на лыжах ⛷🏂</div>
+					</div>
+					<div class="principles__cta">
+						<a href="" class="principles__btn">
+							<span>
+								<img src="./assets/img/icons/horse.svg" alt="horse icon">
+							</span> Присоединиться к команде
+						</a>
+						<a href="" class="principles__btn button-reverse">
+							Задонатить
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="product-story">
+			<div class='container'>
+				<div class='story-block'>
+					<div class='story-block__col column'>
+						<div class='column__img-block'>
+							<div class='column__img'>
+								<picture>
+									<source srcset='./assets/img/iphone-mockup.webp' type='image/webp'>
+									<source srcset='./assets/img/iphone-mockup.png' type='image/png'>
+									<img src='./assets/img/iphone-mockup.webp' alt='Изображение телефона'>
+								</picture>
+							</div>
+							<div class='column__color-block'></div>
+						</div>
+					</div>
+					<div class='story-block__col column'>
+						<div class='column__txt'>
+							<div class='column__title'>
+								История Muteit.app
+							</div>
+							<div class='column__descr'>
+								Это первый продукт, который комьюнити UW взялась развивать. У Оли Найда появилась идея, мы её
+								подхватили. Вместе хотим заботиться о людях с синдромом «стеснительного мочевого пузыря»
+							</div>
+							<div class='column__cta'>
+								<a>Muteit.app</a>
+								<img src='./assets/img/icons/arrow-right.svg' alt=''>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="team-story">
+			<div class='container'>
+				<div class='story-block story-block_team'>
+					<div class='story-block__col column column_team'>
+						<div class='column__img-block column__img-block_team'>
+							<div class='column__img column__img_logo'>
+								<img src='./assets/img/logo.png' alt='Логотип организации'>
+							</div>
+							<div class='column__color-block column__color-block_purple'></div>
+						</div>
+					</div>
+					<div class='story-block__col column'>
+						<div class='column__txt column__txt_team'>
+							<div class='column__title column__title_team'>
+								Почему объединились?
+							</div>
+							<div class='column__descr column__descr_team'>
+								У каждого внутри сформировалась потребность в заполнении пустоты значимыми и реально помогающими людям
+								ценностями и действиями. Unicorn Witnesses это про путь. Команда это тоже про путь.
+								<ul class='description__list'>
+									<li>Путь объединяет команду и комьюнити и делает одним целым.
+									</li>
+									<li>Ценности здоровья, экологии.</li>
+									<li>Некоммерческое сотрудничество и независимость</li>
+								</ul>
+							</div>
+							<div class='column__cta column__cta_team'>
+								<a>Полная история
+									Unicorn Witnesses
+								</a>
+								<img src='./assets/img/icons/arrow-right.svg' alt=''>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="team-speaches speaches">
+			<div class="container">
+				<div class="speaches__block">
+					<div class="speaches__title">
+						А это наши голоса
+					</div>
+					<div class="speaches__list">
+						<div class="speaches__item speach">
+							<div class="speach__caption caption">
+								<div class="caption__img-wrapper">
+									<picture>
+										<source>
+										<img class="caption__img"></img>
+									</picture>
+								</div>
+								<div class="caption__content">
+									<div class="caption__fullname">Алексей Долгих</div>
+									<div class="caption__position">CTO, Quality assurance</div>
+									<div class="caption__socials socials">
+										<a href="" class="socials__link">
+											<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+											<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+										</a>
+										<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+											class="socials__link socials__link_facebook">
+											<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+										</a>
+										<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+											class="socials__link">
+											<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+										</a>
+										<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank"
+											rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+										</a>
+										<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+											class="socials__link">
+											<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="speach__text-block text-block">
+								<div class="text-block__socials socials">
+									<a href="" class="socials__link">
+										<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+										<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+									</a>
+									<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+										class="socials__link socials__link_facebook">
+										<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+									</a>
+									<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+									</a>
+									<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+									</a>
+									<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+									</a>
+								</div>
+								<div class="text-block__speach">Комьюнити Unicorn Witnesses помогает людям и это меня очень мотивирует
+									делать все больше и качественнее. Мы каждый день учимся использовать силу цифровых продуктов. Передаем
+									новичкам навык быть с нами командой, которая гибко умеет подстраиваться под любое изменение запроса
+									пользователей.
+
+									Мы строим качественный конвейер, создав который хотя-бы на 1%, мы избавим людей от рутинных действий.
+									Идём к цели через автоматизацию действий по запросу внутри команды и внедрение умных помощников в виде
+									цифровых мини-продуктов проверенных миллионами на G2.com и Capterra.com.
+								</div>
+								<a href="" class="text-block__view-btn">Показать больше</a>
+								<div class="text-block__forward-item">
+									<a href="" class="text-block__forward-link">На сайт к Алексею</a>
+								</div>
+							</div>
+						</div>
+						<div class="speaches__item speach">
+							<div class="speach__caption caption">
+								<div class="caption__img-wrapper">
+									<picture>
+										<source>
+										<img class="caption__img"></img>
+									</picture>
+								</div>
+								<div class="caption__content">
+									<div class="caption__fullname">Алексей Долгих</div>
+									<div class="caption__position">CTO, Quality assurance</div>
+									<div class="caption__socials socials">
+										<a href="" class="socials__link">
+											<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+											<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+										</a>
+										<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+											class="socials__link socials__link_facebook">
+											<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+										</a>
+										<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+											class="socials__link">
+											<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+										</a>
+										<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank"
+											rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+										</a>
+										<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+											class="socials__link">
+											<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="speach__text-block text-block">
+								<div class="text-block__socials socials">
+									<a href="" class="socials__link">
+										<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+										<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+									</a>
+									<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+										class="socials__link socials__link_facebook">
+										<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+									</a>
+									<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+									</a>
+									<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+									</a>
+									<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+									</a>
+								</div>
+								<div class="text-block__speach">Комьюнити Unicorn Witnesses помогает людям и это меня очень мотивирует
+									делать все больше и качественнее. Мы каждый день учимся использовать силу цифровых продуктов. Передаем
+									новичкам навык быть с нами командой, которая гибко умеет подстраиваться под любое изменение запроса
+									пользователей.
+
+									Мы строим качественный конвейер, создав который хотя-бы на 1%, мы избавим людей от рутинных действий.
+									Идём к цели через автоматизацию действий по запросу внутри команды и внедрение умных помощников в виде
+									цифровых мини-продуктов проверенных миллионами на G2.com и Capterra.com.
+								</div>
+								<a href="" class="text-block__view-btn">Показать больше</a>
+								<div class="text-block__forward-item">
+									<a href="" class="text-block__forward-link">На сайт к Алексею</a>
+								</div>
+							</div>
+						</div>
+						<div class="speaches__item speach">
+							<div class="speach__caption caption">
+								<div class="caption__img-wrapper">
+									<picture>
+										<source>
+										<img class="caption__img"></img>
+									</picture>
+								</div>
+								<div class="caption__content">
+									<div class="caption__fullname">Алексей Долгих</div>
+									<div class="caption__position">CTO, Quality assurance</div>
+									<div class="caption__socials socials">
+										<a href="" class="socials__link">
+											<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+											<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+										</a>
+										<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+											class="socials__link socials__link_facebook">
+											<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+										</a>
+										<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+											class="socials__link">
+											<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+										</a>
+										<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank"
+											rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+										</a>
+										<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+											<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+										</a>
+										<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+											class="socials__link">
+											<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="speach__text-block text-block">
+								<div class="text-block__socials socials">
+									<a href="" class="socials__link">
+										<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+										<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+									</a>
+									<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+										class="socials__link socials__link_facebook">
+										<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+									</a>
+									<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+									</a>
+									<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+									</a>
+									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+										<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+									</a>
+									<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+										class="socials__link">
+										<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+									</a>
+								</div>
+								<div class="text-block__speach">Комьюнити Unicorn Witnesses помогает людям и это меня очень мотивирует
+									делать все больше и качественнее. Мы каждый день учимся использовать силу цифровых продуктов. Передаем
+									новичкам навык быть с нами командой, которая гибко умеет подстраиваться под любое изменение запроса
+									пользователей.
+
+									Мы строим качественный конвейер, создав который хотя-бы на 1%, мы избавим людей от рутинных действий.
+									Идём к цели через автоматизацию действий по запросу внутри команды и внедрение умных помощников в виде
+									цифровых мини-продуктов проверенных миллионами на G2.com и Capterra.com.
+								</div>
+								<a href="" class="text-block__view-btn">Показать больше</a>
+								<div class="text-block__forward-item">
+									<a href="" class="text-block__forward-link">На сайт к Алексею</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer"></footer>
 </body>
 
 </html>

@@ -1,247 +1,310 @@
 @keyframes moveLeft {
-    0% {
-        left: 100vw;
-    }
-    100% {
-        left: 0;
-    }
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes moveRight {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: 100vw;
-    }
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100vw;
+  }
 }
 
 .lock {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .header {
+  background-color: #000;
+  padding: 16px 0 56px 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &.active {
+      height: 100vh;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    position: relative;
+    min-height: 60px;
+
+    & > picture {
+      display: flex;
+
+      & > img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__content {
+    transition: all 0.3s ease;
     background-color: #000;
-    padding: 16px 0 56px 0;
-    position: fixed;
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, max-content);
+    height: 100vh;
+    padding: 15px 20px 29px 14px;
+    position: absolute;
     top: 0;
+    left: 100vw;
+    z-index: 2;
+    grid-template-areas: 'menu' 'socials' 'lang' 'mail';
     width: 100vw;
-    z-index: 10;
-    &__body {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        &.active {
-            height: 100vh;
-        }
+
+    &.active {
+      display: grid;
+      left: 0;
     }
-    &__logo {
-        display: inline-block;
-        position: relative;
-        min-height: 60px;
-        &>picture {
-            display: flex;
-            &>img {
-                object-fit: contain;
-            }
-        }
+  }
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  min-height: 60px;
+
+  & > picture {
+    display: flex;
+
+    & > img {
+      object-fit: contain;
     }
-    &__content {
-        transition: all 0.3s ease;
-        background-color: #000;
-        display: grid;
-        row-gap: 40px;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(4, max-content);
-        height: 100vh;
-        padding: 15px 20px 29px 14px;
-        position: absolute;
-        top: 0;
-        left: 100vw;
-        z-index: 2;
-        grid-template-areas: 'menu' 'socials' 'lang' 'mail';
-        width: 100vw;
-        &.active {
-            display: grid;
-            left: 0;
-        }
-    }
+  }
 }
 
 .socials {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: socials;
-    row-gap: 24px;
-    &__link {
-        height: 20px;
-        flex: 0 0 20px;
-        margin-right: 20px;
-        position: relative;
-        &_facebook {
-            margin-right: 15px;
-            &>img {
-                margin-left: 5px;
-            }
-        }
-        &>img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            object-fit: cover;
-        }
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: socials;
+  row-gap: 24px;
+
+  &__link {
+    height: 20px;
+    flex: 0 0 20px;
+    margin-right: 20px;
+    position: relative;
+
+    &_facebook {
+      margin-right: 15px;
+
+      & > img {
+        margin-left: 5px;
+      }
     }
+
+    & > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    & > span {
+      @include body2-font;
+
+      color: $gray;
+    }
+  }
 }
 
 .mail {
-    grid-area: mail;
-    &__descr {
-        @include body2-font;
-        color: $gray;
-    }
-    &>a {
-        @include body2-font;
-        color: $gold;
-        text-decoration: underline;
-    }
+  grid-area: mail;
+
+  &__descr {
+    @include body2-font;
+
+    color: $gray;
+  }
+
+  & > a {
+    @include body2-font;
+
+    color: $gold;
+    text-decoration: underline;
+  }
 }
 
 .lang {
-    grid-area: lang;
+  grid-area: lang;
+  display: flex;
+  align-items: center;
+
+  &__speech {
+    @include body2-font;
+
+    margin-right: 12px;
+  }
+
+  &__select {
+    @include body2-font;
+
     display: flex;
-    align-items: center;
-    &__speech {
-        @include body2-font;
-        margin-right: 12px;
+
+    & > img {
+      width: 100%;
+      object-fit: contain;
     }
-    &__select {
-        @include body2-font;
-        display: flex;
-        &>img {
-            width: 100%;
-            object-fit: contain;
-        }
+  }
+
+  &__arrow {
+    display: flex;
+    height: 20px;
+    width: 20px;
+
+    &:hover {
+      cursor: pointer;
     }
-    &__arrow {
-        display: flex;
-        height: 20px;
-        width: 20px;
-        &:hover {
-            cursor: pointer;
-        }
-    }
+  }
 }
 
 .menu {
-    grid-area: menu;
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    &__link {
-        @include body2-font;
-    }
+  grid-area: menu;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__link {
+    @include body2-font;
+  }
 }
 
 .burger {
-    align-items: center;
-    display: flex;
-    position: absolute;
-    right: 21px;
-    top: 26px;
-    z-index: 3;
-    &__label {
-        @include body2-font;
-        margin-right: 12px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 21px;
+  top: 26px;
+  z-index: 3;
+
+  &__label {
+    @include body2-font;
+
+    margin-right: 12px;
+  }
+
+  &__button {
+    position: relative;
+    width: 28px;
+    height: 20px;
+
+    & > span {
+      display: block;
+      background-color: #fff;
+      content: '';
+      height: 3px;
+      position: absolute;
+      top: 0;
+      transition: all 0.3s linear;
+      width: 100%;
+
+      &:nth-of-type(2) {
+        top: 8.7px;
+      }
+
+      &:nth-of-type(3) {
+        margin-top: 17.4px;
+      }
     }
-    &__button {
-        position: relative;
-        width: 28px;
-        height: 20px;
-        &>span {
-            display: block;
-            background-color: #fff;
-            content: '';
-            height: 3px;
-            position: absolute;
-            top: 0;
-            transition: all 0.3s linear;
-            width: 100%;
-            &:nth-of-type(2) {
-                top: 8.7px;
-            }
-            &:nth-of-type(3) {
-                margin-top: 17.4px;
-            }
-        }
+  }
+
+  &.active {
+    .burger__button {
+      :nth-child(even) {
+        display: none;
+      }
+
+      :nth-child(odd) {
+        top: 8.7px;
+        margin: 0;
+      }
+
+      :first-child {
+        transform: rotate(45deg);
+      }
+
+      :last-child {
+        transform: rotate(-45deg);
+      }
     }
-    &.active {
-        .burger__button {
-             :nth-child(even) {
-                display: none;
-            }
-             :nth-child(odd) {
-                top: 8.7px;
-                margin: 0;
-            }
-             :first-child {
-                transform: rotate(45deg);
-            }
-             :last-child {
-                transform: rotate(-45deg);
-            }
-        }
-    }
+  }
 }
 
 @media (min-width: 767px) {
-    .header {
-        &__body {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            .active {
-                // height: 50vh;
-            }
-        }
+  .header {
+    &__body {
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .active {
+        // height: 50vh;
+      }
     }
-    .socials {}
+  }
+  .socials {}
 }
 
 @media (min-width: 1025px) {
-    .header {
-        padding-bottom: 0;
-        &__content {
-            grid-template-areas: 'menu lang' 'mail socials';
-            grid-template-columns: minmax(max-content, 634px) 1fr;
-            grid-template-rows: repeat(2, min-content);
-            height: min-content;
-            padding-bottom: 0;
-            position: static;
-            row-gap: 15px;
-        }
+  .header {
+    padding-bottom: 0;
+
+    &__content {
+      grid-template-areas: 'menu lang' 'mail socials';
+      grid-template-columns: minmax(max-content, 634px) 1fr;
+      grid-template-rows: repeat(2, min-content);
+      height: min-content;
+      padding-bottom: 0;
+      position: static;
+      row-gap: 15px;
     }
-    .menu {
-        &__list {
-            flex-direction: row;
-        }
+  }
+
+  .menu {
+    &__list {
+      flex-direction: row;
     }
-    .lang {
-        justify-content: flex-end;
+  }
+
+  .lang {
+    justify-content: flex-end;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .socials {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    &__link {
+      margin: 0;
     }
-    .burger {
-        display: none;
-    }
-    .socials {
-        align-items: flex-end;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 10px;
-        &__link {
-            margin: 0;
-        }
-    }
+  }
 }

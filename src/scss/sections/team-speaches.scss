@@ -1,6 +1,45 @@
 .speaches {
-    &__block {}
-    &__title {}
-    &__list {}
-    &__item {}
+	&__block {
+		padding: 45px 0 65px;
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 92%;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 35px;
+	}
+	&__item {
+	}
+}
+
+@media (min-width: 768px) {
+	.speaches {
+		&__block {
+			margin-top: 48px;
+			padding: 0;
+		}
+		&__title {
+			font-size: 48px;
+			line-height: 64px;
+		}
+		&__list {
+			margin-top: 89px;
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.speaches {
+		&__block {
+			margin: 0;
+			padding: 0;
+		}
+		&__list {
+			margin-top: 89px;
+		}
+	}
 }

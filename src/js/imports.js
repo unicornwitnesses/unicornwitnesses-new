@@ -85,3 +85,9 @@ import '../assets/img/avatars/150/maxim_litv.webp';
 import '../assets/img/avatars/150/nikita_khristenko.webp';
 import '../assets/img/avatars/150/olya_nayda.webp';
 import '../assets/img/avatars/150/pavel_petrov.webp';
+
+import '../assets/img/avatars/270/alex_dolgikh.png';
+import '../assets/img/avatars/270/alex_verevkin.png';
+
+import '../assets/img/avatars/270/alex_dolgikh.webp';
+import '../assets/img/avatars/270/alex_verevkin.webp';

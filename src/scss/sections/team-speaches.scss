@@ -21,8 +21,14 @@
 			display: flex;
 		}
 		&__text-block {
+			@include speech-bubble-left(33px, red, 2px, 0);
+
 			display: flex;
 			flex-direction: column;
+			margin-top: -22px;
+			padding-left: 19px;
+			padding-right: 19px;
+			padding: 43px 19px 0;
 		}
 	}
 
@@ -54,8 +60,6 @@
 		}
 		&__position {
 			@include body2-font;
-
-			line-height: 150%;
 		}
 		&__socials {
 			display: none;
@@ -67,6 +71,15 @@
 			margin-right: 30px;
 			& > img {
 				filter: invert(74%) sepia(1%) saturate(137%) hue-rotate(314deg) brightness(75%) contrast(88%);
+			}
+		}
+	}
+	.text-block {
+		margin-top: -26px;
+		&__socials {
+			justify-content: space-around;
+			& > a {
+				margin-right: 0;
 			}
 		}
 	}
@@ -115,6 +128,9 @@
 		.socials__link {
 			height: 28px;
 			flex-basis: 28px;
+		}
+		.text-block {
+			margin-top: -24px;
 		}
 	}
 }

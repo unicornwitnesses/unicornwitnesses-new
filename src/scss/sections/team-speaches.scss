@@ -10,6 +10,7 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		margin-top: 35px;
 	}
 
@@ -58,11 +59,12 @@
 		}
 		&__socials {
 			display: none;
+			justify-content: flex-start;
 		}
 	}
 	.socials {
 		&__link {
-			margin-right: 32px;
+			margin-right: 30px;
 			& > img {
 				filter: invert(74%) sepia(1%) saturate(137%) hue-rotate(314deg) brightness(75%) contrast(88%);
 			}
@@ -108,9 +110,6 @@
 				display: flex;
 				margin-top: 8px;
 				row-gap: 24px;
-				& > a {
-					margin-left: 0;
-				}
 			}
 		}
 		.socials__link {
@@ -128,6 +127,9 @@
 		}
 		&__list {
 			margin-top: 89px;
+		}
+		&__item {
+			max-width: calc(50% - 16px);
 		}
 	}
 }

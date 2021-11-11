@@ -126,6 +126,9 @@
 		&__list {
 			margin-top: 89px;
 		}
+		&__forward-item {
+			display: none;
+		}
 
 		.caption {
 			&__img-wrapper {
@@ -143,6 +146,8 @@
 			}
 			&__fullname {
 				font-size: 36px;
+				line-height: 130%;
+				padding-right: 20px;
 			}
 			&__position {
 				@include body1-font;
@@ -158,10 +163,26 @@
 			flex-basis: 28px;
 		}
 		.text-block {
-			border-radius: 0 100px;
-			margin-top: -24px;
+			@include body1-font;
+			@include speech-bubble-left(100px, $red, 2px, 0);
+
+			border-bottom-left-radius: 100px;
+			border-bottom-right-radius: 100px;
+			border-width: 4px;
+			margin-top: -26px;
 			padding: 64px;
+
+			&__socials {
+				display: none;
+			}
+			&__speach {
+				font-size: inherit;
+			}
+			&__view-btn {
+				text-decoration: none;
+			}
 		}
+
 	}
 }
 

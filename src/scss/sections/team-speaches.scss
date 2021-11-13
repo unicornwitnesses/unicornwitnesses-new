@@ -44,6 +44,9 @@
 			flex-direction: column;
 			margin-top: -22px;
 			padding: 43px 19px 16px;
+			.cta-item {
+				display: none;
+			}
 		}
 	}
 
@@ -180,6 +183,9 @@
 			}
 			&__view-btn {
 				text-decoration: none;
+			}
+			.cta-item {
+				display: flex;
 			}
 		}
 

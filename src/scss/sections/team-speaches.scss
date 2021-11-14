@@ -15,16 +15,15 @@
 	}
 	&__forward-item {
 		background-color: rgba($color: $red, $alpha: 0.1);
-		border: 2px solid $red;
-		border-bottom-right-radius: 33px;
 		border-bottom-left-radius: 33px;
+		border-bottom-right-radius: 33px;
 		border-top: none;
+		border: 2px solid $red;
 		padding: 8px 0 11px 0;
 		text-align: center;
 	}
 	&__forward-link {
 		@include body2-font;
-
 
 		font-size: 15px;
 	}
@@ -32,6 +31,9 @@
 	.speach {
 		display: flex;
 		flex-direction: column;
+		&:nth-child(2n) {
+			margin-top: 60px;
+		}
 		&__caption {
 			display: flex;
 		}
@@ -52,15 +54,15 @@
 
 	.caption {
 		&__img-wrapper {
-			position: relative;
 			height: 110px;
+			position: relative;
 			width: 110px;
 			& > picture {
+				bottom: 0;
 				height: 100%;
+				left: 0;
 				position: absolute;
 				width: 100%;
-				bottom: 0;
-				left: 0;
 			}
 		}
 		&__content {
@@ -105,14 +107,21 @@
 		}
 		&__speach {
 			@include body2-font;
+			height: 144px;
+			overflow: hidden;
 		}
 		&__view-btn {
 			@include body2-font;
 
 			color: $red;
 			text-decoration: underline;
+			&:hover {
+				cursor: pointer;
+			}
 		}
-
+		.expand {
+			height: auto;
+		}
 	}
 }
 
@@ -132,6 +141,11 @@
 		&__forward-item {
 			display: none;
 		}
+		.speach {
+			&:nth-child(2n) {
+				margin-top: 64px;
+			}
+		}
 
 		.caption {
 			&__img-wrapper {
@@ -144,8 +158,8 @@
 				}
 			}
 			&__content {
-				padding: 0 16px 52px 22px;
 				gap: 16px;
+				padding: 0 16px 52px 22px;
 			}
 			&__fullname {
 				font-size: 36px;
@@ -180,6 +194,7 @@
 			}
 			&__speach {
 				font-size: inherit;
+				height: 180px;
 			}
 			&__view-btn {
 				text-decoration: none;
@@ -188,7 +203,6 @@
 				display: flex;
 			}
 		}
-
 	}
 }
 
@@ -203,6 +217,11 @@
 		}
 		&__item {
 			max-width: calc(50% - 16px);
+		}
+		.speach {
+			&:nth-child(2n) {
+				margin-top: 220px;
+			}
 		}
 	}
 }

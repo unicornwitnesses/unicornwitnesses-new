@@ -18,12 +18,13 @@
 		.speach_#{$name} {
 			display: flex;
 			flex-direction: column;
-			&:nth-child(2n) {
+			&:nth-child(n+2) {
 				margin-top: 60px;
 			}
 			.caption {
 				display: flex;
 				&__img-wrapper {
+					flex-shrink: 0;
 					height: 110px;
 					position: relative;
 					width: 110px;
@@ -33,11 +34,15 @@
 						left: 0;
 						position: absolute;
 						width: 100%;
+						& > img {
+							height: 100%;;
+							object-fit: cover;
+						}
 					}
 				}
 				&__content {
 					display: flex;
-					flex: 1 1 auto;
+					flex: 1 2 auto;
 					flex-direction: column;
 					padding: 0 16px;
 					row-gap: 8px;
@@ -63,13 +68,10 @@
 				border-bottom-right-radius: 0;
 				display: flex;
 				flex-direction: column;
-				margin-top: -22px;
-				margin-top: -26px;
+				margin-top: -15px;
 				padding: 43px 19px 16px;
-				
-				& > :nth-child(n) {
-					margin-top: 16px;
-				}
+				row-gap: 16px;
+
 				&__socials {
 					justify-content: space-around;
 					& > a {
@@ -116,6 +118,7 @@
 			}
 		}
 		.socials {
+			margin-top: 0;
 			&__link {
 				margin-right: 30px;
 				& > img {
@@ -140,9 +143,7 @@
 			margin-top: 89px;
 		}
 		.speach {
-			&:nth-child(2n) {
-				margin-top: 64px;
-			}
+			margin-top: 64px;
 			&__forward-item {
 				display: none;
 			}
@@ -154,7 +155,7 @@
 					& > picture {
 						height: 270px;
 						position: absolute;
-						width: 100%;
+						width: 270px;
 					}
 				}
 				&__content {
@@ -198,6 +199,34 @@
 					display: flex;
 				}
 			}
+			&:nth-child(even) {
+
+				.caption {
+					flex-direction: row-reverse;
+
+					&__img-wrapper {
+						right: 5px;
+					}
+					&__content {
+						padding: 0 22px 52px 16px;
+						text-align: right;
+					}
+					&__fullname {
+						padding: 0;
+					}
+					&__socials {
+						justify-content: flex-end;
+						&>a {
+							margin-right: 0;
+							margin-left: 30px;
+						}
+					}
+				}
+				.text-block {
+					border-top-left-radius: 100px;
+					border-top-right-radius: 0;
+				}
+			}
 		}
 		.socials__link {
 			height: 28px;
@@ -213,13 +242,14 @@
 			padding: 0;
 		}
 		&__list {
+			height: 4000px;
 			margin-top: 89px;
 		}
 		&__item {
 			max-width: calc(50% - 16px);
 		}
 		.speach {
-			&:nth-child(2n) {
+			&:nth-child(n+2) {
 				margin-top: 220px;
 			}
 		}

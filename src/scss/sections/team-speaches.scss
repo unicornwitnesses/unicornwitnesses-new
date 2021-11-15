@@ -14,118 +14,114 @@
 		margin-top: 35px;
 	}
 
-	
-
-	.speach {
-		display: flex;
-		flex-direction: column;
-		&:nth-child(2n) {
-			margin-top: 60px;
-			&__caption {
-				flex-direction: row-reverse;
-			}
-		}
-		&__caption {
-			display: flex;
-		}
-		&__text-block {
-			@include speech-bubble-left(33px, $red, 2px, 0);
-
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
+	@each $name, $color in $colors {
+		.speach_#{$name} {
 			display: flex;
 			flex-direction: column;
-			margin-top: -22px;
-			padding: 43px 19px 16px;
-			.cta-item {
-				display: none;
+			&:nth-child(2n) {
+				margin-top: 60px;
 			}
-		}
-		&__forward-item {
-			background-color: rgba($color: $red, $alpha: 0.1);
-			border-bottom-left-radius: 33px;
-			border-bottom-right-radius: 33px;
-			border: 2px solid $red;
-			border-top: none;
-			padding: 8px 0 11px 0;
-			text-align: center;
-		}
-		&__forward-link {
-			@include body2-font;
+			.caption {
+				display: flex;
+				&__img-wrapper {
+					height: 110px;
+					position: relative;
+					width: 110px;
+					& > picture {
+						bottom: 0;
+						height: 100%;
+						left: 0;
+						position: absolute;
+						width: 100%;
+					}
+				}
+				&__content {
+					display: flex;
+					flex: 1 1 auto;
+					flex-direction: column;
+					padding: 0 16px;
+					row-gap: 8px;
+				}
+				&__fullname {
+					@include body2-font;
 
-			font-size: 15px;
-		}
-	}
+					font-weight: bold;
+					line-height: 130%;
+				}
+				&__position {
+					@include body2-font;
+				}
+				&__socials {
+					display: none;
+					justify-content: flex-start;
+				}
+			}
+			.text-block {
+				@include speech-bubble-left(33px, $color, 2px, 0);
 
-	.caption {
-		&__img-wrapper {
-			height: 110px;
-			position: relative;
-			width: 110px;
-			& > picture {
-				bottom: 0;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				width: 100%;
-			}
-		}
-		&__content {
-			display: flex;
-			flex: 1 1 auto;
-			flex-direction: column;
-			padding: 0 16px;
-			row-gap: 8px;
-		}
-		&__fullname {
-			@include body2-font;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				display: flex;
+				flex-direction: column;
+				margin-top: -22px;
+				margin-top: -26px;
+				padding: 43px 19px 16px;
+				
+				& > :nth-child(n) {
+					margin-top: 16px;
+				}
+				&__socials {
+					justify-content: space-around;
+					& > a {
+						margin-right: 0;
+					}
+				}
+				&__speach {
+					@include body2-font;
+					height: 144px;
+					overflow: hidden;
+				}
+				.cta-item {
+					display: none;
+				}
+				&__view-btn {
+					@include body2-font;
 
-			font-weight: bold;
-			line-height: 130%;
-		}
-		&__position {
-			@include body2-font;
-		}
-		&__socials {
-			display: none;
-			justify-content: flex-start;
-		}
-	}
-	.socials {
-		&__link {
-			margin-right: 30px;
-			& > img {
-				filter: invert(74%) sepia(1%) saturate(137%) hue-rotate(314deg) brightness(75%) contrast(88%);
+					color: $color;
+					text-decoration: underline;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				.expand {
+					height: auto;
+				}
 			}
-		}
-	}
-	.text-block {
-		margin-top: -26px;
-		& > :nth-child(n) {
-			margin-top: 16px;
-		}
-		&__socials {
-			justify-content: space-around;
-			& > a {
-				margin-right: 0;
-			}
-		}
-		&__speach {
-			@include body2-font;
-			height: 144px;
-			overflow: hidden;
-		}
-		&__view-btn {
-			@include body2-font;
+			.speach {
+				&__forward-item {
+					background-color: rgba($color: $color, $alpha: 0.1);
+					border-bottom-left-radius: 33px;
+					border-bottom-right-radius: 33px;
+					border: 2px solid $color;
+					border-top: none;
+					margin-top: -1px; //margin and padding-top: 9px, needs to collapse borders between blocks
+					padding: 9px 0 11px 0;
+					text-align: center;
+				}
+				&__forward-link {
+					@include body2-font;
 
-			color: $red;
-			text-decoration: underline;
-			&:hover {
-				cursor: pointer;
+					font-size: 15px;
+				}
 			}
 		}
-		.expand {
-			height: auto;
+		.socials {
+			&__link {
+				margin-right: 30px;
+				& > img {
+					filter: invert(74%) sepia(1%) saturate(137%) hue-rotate(314deg) brightness(75%) contrast(88%);
+				}
+			}
 		}
 	}
 }
@@ -150,63 +146,62 @@
 			&__forward-item {
 				display: none;
 			}
-		}
+			.caption {
+				&__img-wrapper {
+					height: 302px;
+					width: 270px;
 
-		.caption {
-			&__img-wrapper {
-				height: 302px;
-				width: 270px;
-				& > picture {
-					height: 270px;
-					position: absolute;
-					width: 100%;
+					& > picture {
+						height: 270px;
+						position: absolute;
+						width: 100%;
+					}
+				}
+				&__content {
+					gap: 16px;
+					padding: 0 16px 52px 22px;
+				}
+				&__fullname {
+					font-size: 36px;
+					line-height: 130%;
+					padding-right: 20px;
+				}
+				&__position {
+					@include body1-font;
+				}
+				&__socials {
+					display: flex;
+					margin-top: 8px;
+					row-gap: 24px;
 				}
 			}
-			&__content {
-				gap: 16px;
-				padding: 0 16px 52px 22px;
-			}
-			&__fullname {
-				font-size: 36px;
-				line-height: 130%;
-				padding-right: 20px;
-			}
-			&__position {
+			.text-block {
 				@include body1-font;
-			}
-			&__socials {
-				display: flex;
-				margin-top: 8px;
-				row-gap: 24px;
+
+				border-radius: 100px;
+				border-top-left-radius: 0;
+				border-width: 4px;
+				margin-top: -26px;
+				padding: 64px;
+
+				&__socials {
+					display: none;
+				}
+				&__speach {
+					font-size: inherit;
+					height: 180px;
+				}
+				&__view-btn {
+					text-decoration: none;
+				}
+				.cta-item {
+					display: flex;
+				}
 			}
 		}
 		.socials__link {
 			height: 28px;
 			flex-basis: 28px;
-		}
-		.text-block {
-			@include body1-font;
-			@include speech-bubble-left(100px, $red, 2px, 0);
-
-			border-bottom-left-radius: 100px;
-			border-bottom-right-radius: 100px;
-			border-width: 4px;
-			margin-top: -26px;
-			padding: 64px;
-
-			&__socials {
-				display: none;
-			}
-			&__speach {
-				font-size: inherit;
-				height: 180px;
-			}
-			&__view-btn {
-				text-decoration: none;
-			}
-			.cta-item {
-				display: flex;
-			}
 		}
 	}
 }

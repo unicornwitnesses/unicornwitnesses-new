@@ -1,5 +1,5 @@
 .principles {
-    padding: 102px 0 160px;
+    padding: 202px 0 160px;
     &__text {
         padding-right: 318px;
     }
@@ -42,6 +42,7 @@
 //for mobile devices
 @media (max-width: 767px) {
     .principles {
+			padding: 23px 0 50px;
         &__text {
             padding: 0;
         }

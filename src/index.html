@@ -2,138 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
-    <title>
-        <%= htmlWebpackPlugin.options.title %>
-    </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__body">
-                <a href="" class="header__logo">
-                    <img src="./assets/img/logo.svg" alt="Logo of unicorn-witnesses">
-                </a>
-                <div class="header__content content">
-                    <nav class="content__nav menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Продукты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">О нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Присоединиться</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Поддержать</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Блог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="content__lang lang">
-                        <span class="lang__speech">Мы говорим:</span>
-                        <div class="lang__select">
-                            <img src="./assets/img/icons/russian_flag.svg" alt="Russian flag">
-                        </div>
-                        <span class="lang__arrow">
-                            <img src="./assets/img/icons/arrow-down.svg" alt="arrow down">
-                        </span>
-                    </div>
-                    <div class="content__mail mail">
-                        <div class="mail__descr">
-                            Сразу готовы с нами пообщаться? Напишите сюда:
-                        </div>
-                        <a href="mailto:help@unicornwitnesses.com" class="mail__link">
-                            help@unicornwitnesses.com
-                        </a>
-                    </div>
-                    <div class="content__socials socials">
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
-                            <img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
-                        </a>
-                        <a href="https://facebook.com/" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img fb">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
-                        </a>
-                        <a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
-                        </a>
-                        <a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
-                        </a>
-                        <a href="" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
-                        </a>
-                        <a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer" class="socials__link">
-                            <img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
-                        </a>
-                    </div>
-                </div>
-                <div class="header__burger burger">
-                    <div class="burger__label">Меню</div>
-                    <div class="burger__button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="team-presentation">
-            <div class="outer-container">
-                <div class="container">
-                    <div class="team-presentation__leading-block leading-block">
-                        <div class="leading-block__text">
-                            <div class="leading-block__title">
-                                <h1>
-                                    Мы объединились и создаём социально-значимые цифровые продукты
-                                </h1>
-                            </div>
-                            <div class="leading-block__subtitle">
-                                Нам нравится помогать людям: делимся знаниями, генерируем идеи и воплощаем их в жизнь.
-                            </div>
-                        </div>
-                        <div class="leading-block__join join-block">
-                            <span class="join-block__label">
-								Говорят, наши чаты самые дружелюбные:
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="" class="header__logo logo">
+					<picture>
+						<source media="(min-width: 767px)" srcset="./assets/img/logo.png">
+						<img src="./assets/img/logo_110x60.png" alt="Logo of unicorn-witnesses">
+					</picture>
+
+				</a>
+				<div class="header__content content">
+					<nav class="content__nav menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Продукты</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Присоединиться</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Поддержать</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Блог</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="content__lang lang">
+						<span class="lang__speech">Мы говорим:</span>
+						<div class="lang__select">
+							<img src="./assets/img/icons/russian_flag.svg" alt="Russian flag">
+						</div>
+						<span class="lang__arrow">
+							<img src="./assets/img/icons/arrow-down.svg" alt="arrow down">
+						</span>
+					</div>
+					<div class="content__mail mail">
+						<div class="mail__descr">
+							Сразу готовы с нами пообщаться? Напишите сюда:
+						</div>
+						<a href="mailto:help@unicornwitnesses.com" class="mail__link">
+							help@unicornwitnesses.com
+						</a>
+					</div>
+					<div class="content__socials socials">
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+							<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
+						</a>
+						<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+							class="socials__link socials__link_facebook">
+							<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
+						</a>
+						<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
+						</a>
+						<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+							class="socials__link">
+							<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img">
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img">
+						</a>
+						<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+							class="socials__link">
+							<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
+						</a>
+					</div>
+				</div>
+				<div class="header__burger burger">
+					<div class="burger__label">Меню</div>
+					<div class="burger__button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="team-presentation">
+
+			<div class="container">
+				<div class="team-presentation__leading-block leading-block">
+					<div class="leading-block__text">
+						<div class="leading-block__title">
+							<h1>
+								Мы объединились и создаём социально-значимые цифровые продукты
+							</h1>
+						</div>
+						<div class="leading-block__subtitle">
+							Нам нравится помогать людям: делимся знаниями, генерируем идеи и воплощаем их в жизнь.
+						</div>
+					</div>
+					<div class="leading-block__join join-block">
+						<span class="join-block__label">
+							Говорят, наши чаты самые дружелюбные:
+						</span>
+						<a href="" class="join-block__link join-block__link-discord">
+							<img src="./assets/img/icons/discord.svg" class="join-block__icon" alt="Войти на наш сервер дискорда">
+							<span class="join-block__contact">
+								Discord
 							</span>
-                            <a href="" class="join-block__link join-block__link-discord">
-                                <img src="./assets/img/icons/discord.svg" class="join-block__icon" alt="Войти на наш сервер дискорда">
-                                <span class="join-block__contact">
-									Discord
-								</span>
-                            </a>
-                            <a href="" class="join-block__link join-block__link-telegram">
-                                <img src="/assets/img/icons/telegram.svg" alt="" class="join-block__icon">
-                                <span class="join-block__contact">
-                                    Telegram
-								</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+						</a>
+						<a href="" class="join-block__link join-block__link-telegram">
+							<img src="/assets/img/icons/telegram.svg" alt="" class="join-block__icon">
+							<span class="join-block__contact">
+								Telegram
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="outer-container">
                 <div class="team-presentation__avatar-block avatars">
                     <div class="avatars__row avatars__row-sm">
                         <div class="avatars__item">
@@ -256,14 +264,146 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="principles"></section>
-        <section class="product-story"></section>
-        <section class="team-story"></section>
-        <section class="team-speaches"></section>
-    </main>
-    <footer class="footer">
-    </footer>
+		</section>
+		<section class="principles">
+			<div class="container">
+				<div class="principles__block">
+					<div class="principles__text">
+						<div class="principles__title">
+							<h2>
+								Становимся точкой входа в мир социально значимых цифровых продуктов
+							</h2>
+						</div>
+						<div class="principles__descr">Наши ценности. Забота о пользователях: влюбляемся в проблему, а не в решение.
+							Забота о друг-друге: помогаем сокомандникам с обучением, оборудованием, иногда вместе ездим на море 🌊 и
+							кататься на лыжах ⛷🏂</div>
+					</div>
+					<div class="principles__cta">
+						<a href="" class="principles__btn">
+							<span>
+								<img src="./assets/img/icons/horse.svg" alt="horse icon">
+							</span> Присоединиться к команде
+						</a>
+						<a href="" class="principles__btn button-reverse">
+							Задонатить
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="product-story"></section>
+		<section class="team-story"></section>
+		<section class="team-speaches"></section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__block">
+				<a href="" class="footer__logo logo">
+					<picture>
+						<source media="(min-width: 767px)" srcset="./assets/img/logo.png">
+						<img src="./assets/img/logo_110x60.png" alt="Logo of unicorn-witnesses">
+					</picture>
+				</a>
+				<div class="footer__mail mail">
+					<div class="mail__descr">
+						Если хотите инвестровать в нас или сотрудничать, пишите на почту
+					</div>
+					<a href="mailto:help@unicornwitnesses.com" class="mail__link">
+						help@unicornwitnesses.com
+					</a>
+				</div>
+				<div class="footer__content content">
+					<div class="content__socials socials">
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+							<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img" />
+							<span>Телеграм</span>
+						</a>
+						<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+							class="socials__link socials__link_facebook">
+							<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img fb" />
+							<span>Фейсбук</span>
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img" />
+							<span>Инста</span>
+						</a>
+						<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img" />
+							<span>Твиттер</span>
+						</a>
+						<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+							class="socials__link">
+							<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img" />
+							<span>LinkedIn</span>
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/cb.svg" alt="go to crunchbase" class="socials__img" />
+							<span>CrunchBase</span>
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/angellist.svg" alt="go to angellist" class="socials__img" />
+							<span>AngelList</span>
+						</a>
+						<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+							<img src="./assets/img/icons/producthunt.svg" alt="go to producthunt" class="socials__img" />
+							<span>ProductHunt</span>
+						</a>
+						<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+							class="socials__link">
+							<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img" />
+							<span>GitHub</span>
+						</a>
+					</div>
+					<nav class="content__nav menu">
+						<ul class="menu__map-list">
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Site map
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Legal
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Terms to use
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Privacy policy
+								</a>
+							</li>
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Продукты</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Присоединиться</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Поддержать</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Блог</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

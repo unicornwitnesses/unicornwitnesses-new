@@ -86,7 +86,7 @@
 		font-size: 24px;
 		font-weight: 800;
 		line-height: 130%;
-		
+
 		&_team {
 			padding-right: 143px;
 		}
@@ -104,23 +104,18 @@
 			word-wrap: break-word;
 		}
 	}
+}
 
-	&__cta {
-		display: flex;
-
-		&_team > a {
-			width: 143px;
-		}
-
-		& > a {
-			@include body2-font;
-
-			color: $purple-light;
-		}
-
-		& > img {
-			animation: arrow-move 2s infinite;
-		}
+.cta-item {
+	display: flex;
+	align-items: center;
+	& > a {
+		@include body2-font;
+	}
+	& > img {
+		animation: arrow-move 2s infinite;
+		height: 20px;
+		width: 20px;
 	}
 }
 

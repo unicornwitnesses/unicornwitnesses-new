@@ -4,6 +4,10 @@
 	overflow: hidden;
 }
 
+.description__list {
+	display: none;
+}
+
 @keyframes arrow-move {
 	0% {
 		margin-left: 4px;

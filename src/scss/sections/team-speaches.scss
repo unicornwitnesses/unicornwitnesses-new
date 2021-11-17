@@ -1,0 +1,257 @@
+.speaches {
+	&__block {
+		padding: 45px 0 65px;
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 92%;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-top: 35px;
+	}
+
+	@each $name, $color in $colors {
+		.speach_#{$name} {
+			display: flex;
+			flex-direction: column;
+			&:nth-child(n+2) {
+				margin-top: 60px;
+			}
+			.caption {
+				display: flex;
+				&__img-wrapper {
+					flex-shrink: 0;
+					height: 110px;
+					position: relative;
+					width: 110px;
+					& > picture {
+						bottom: 0;
+						height: 100%;
+						left: 0;
+						position: absolute;
+						width: 100%;
+						& > img {
+							height: 100%;;
+							object-fit: cover;
+						}
+					}
+				}
+				&__content {
+					display: flex;
+					flex: 1 2 auto;
+					flex-direction: column;
+					padding: 0 16px;
+					row-gap: 8px;
+				}
+				&__fullname {
+					@include body2-font;
+
+					font-weight: bold;
+					line-height: 130%;
+				}
+				&__position {
+					@include body2-font;
+				}
+				&__socials {
+					display: none;
+					justify-content: flex-start;
+				}
+			}
+			.text-block {
+				@include speech-bubble-left(33px, $color, 2px, 0);
+
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				display: flex;
+				flex-direction: column;
+				margin-top: -15px;
+				padding: 43px 19px 16px;
+				row-gap: 16px;
+
+				&__socials {
+					justify-content: space-around;
+					& > a {
+						margin-right: 0;
+					}
+				}
+				&__speach {
+					@include body2-font;
+					height: 144px;
+					overflow: hidden;
+				}
+				.cta-item {
+					display: none;
+				}
+				&__view-btn {
+					@include body2-font;
+
+					color: $color;
+					text-decoration: underline;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				.expand {
+					height: auto;
+				}
+			}
+			.speach {
+				&__forward-item {
+					background-color: rgba($color: $color, $alpha: 0.1);
+					border-bottom-left-radius: 33px;
+					border-bottom-right-radius: 33px;
+					border: 2px solid $color;
+					border-top: none;
+					margin-top: -1px; //margin and padding-top: 9px, needs to collapse borders between blocks
+					padding: 9px 0 11px 0;
+					text-align: center;
+				}
+				&__forward-link {
+					@include body2-font;
+
+					font-size: 15px;
+				}
+			}
+		}
+		.socials {
+			margin-top: 0;
+			&__link {
+				margin-right: 30px;
+				& > img {
+					filter: invert(74%) sepia(1%) saturate(137%) hue-rotate(314deg) brightness(75%) contrast(88%);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.speaches {
+		&__block {
+			margin-top: 48px;
+			padding: 0 47px;
+		}
+		&__title {
+			font-size: 48px;
+			line-height: 64px;
+		}
+		&__list {
+			margin-top: 89px;
+		}
+		.speach {
+			margin-top: 64px;
+			&__forward-item {
+				display: none;
+			}
+			.caption {
+				&__img-wrapper {
+					height: 302px;
+					width: 270px;
+
+					& > picture {
+						height: 270px;
+						position: absolute;
+						width: 270px;
+					}
+				}
+				&__content {
+					gap: 16px;
+					padding: 0 16px 52px 22px;
+				}
+				&__fullname {
+					font-size: 36px;
+					line-height: 130%;
+					padding-right: 20px;
+				}
+				&__position {
+					@include body1-font;
+				}
+				&__socials {
+					display: flex;
+					margin-top: 8px;
+					row-gap: 24px;
+				}
+			}
+			.text-block {
+				@include body1-font;
+
+				border-radius: 100px;
+				border-top-left-radius: 0;
+				border-width: 4px;
+				margin-top: -26px;
+				padding: 64px;
+
+				&__socials {
+					display: none;
+				}
+				&__speach {
+					font-size: inherit;
+					height: 180px;
+				}
+				&__view-btn {
+					text-decoration: none;
+				}
+				.cta-item {
+					display: flex;
+				}
+			}
+			&:nth-child(even) {
+
+				.caption {
+					flex-direction: row-reverse;
+
+					&__img-wrapper {
+						right: 5px;
+					}
+					&__content {
+						padding: 0 22px 52px 16px;
+						text-align: right;
+					}
+					&__fullname {
+						padding: 0;
+					}
+					&__socials {
+						justify-content: flex-end;
+						&>a {
+							margin-right: 0;
+							margin-left: 30px;
+						}
+					}
+				}
+				.text-block {
+					border-top-left-radius: 100px;
+					border-top-right-radius: 0;
+				}
+			}
+		}
+		.socials__link {
+			height: 28px;
+			flex-basis: 28px;
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.speaches {
+		&__block {
+			margin: 0;
+			padding: 0;
+		}
+		&__list {
+			height: 4000px;
+			margin-top: 89px;
+		}
+		&__item {
+			max-width: calc(50% - 16px);
+		}
+		.speach {
+			&:nth-child(n+2) {
+				margin-top: 220px;
+			}
+		}
+	}
+}

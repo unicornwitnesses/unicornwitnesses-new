@@ -36,7 +36,6 @@
 		height: 792px;
 		width: 608px;
 		margin: 0 auto;
-
 		&_team {
 			display: flex;
 			max-height: 300px;
@@ -46,7 +45,6 @@
 			margin: 0 auto;
 		}
 	}
-
 	&__img {
 		height: 700px;
 		position: absolute;
@@ -54,20 +52,17 @@
 		left: translateY(50%, -50%);
 		width: 349px;
 		z-index: 2;
-
 		&_logo {
 			height: 88px;
 			width: 163px;
 			position: inherit;
 		}
-
 		& > img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
 		}
 	}
-
 	&__color-block {
 		background-color: $yellow;
 		border-radius: 35%;
@@ -91,7 +86,7 @@
 		font-size: 24px;
 		font-weight: 800;
 		line-height: 130%;
-
+		
 		&_team {
 			padding-right: 143px;
 		}
@@ -148,7 +143,6 @@
 		&_team {
 			padding: 0;
 		}
-
 		&__img_logo {
 			height: 178px;
 			width: 328px;
@@ -162,24 +156,20 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-
 			&_team {
 				min-height: 608px;
 				min-width: 608px;
 			}
 		}
-
 		&__color-block_purple {
 			border-radius: 200px;
 			height: 630px;
 			width: 460px;
 		}
-
 		&__title {
 			font-size: 48px;
 			font-weight: bold;
 			line-height: 64px;
-
 			&_team {
 				padding: 0;
 			}
@@ -209,9 +199,26 @@
 				}
 			}
 		}
-
-		&__cta > img {
+	}
+	.cta-item {
+		& > a {
+			@include body1-font;
+			color: #fff;
+			text-decoration: underline;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&_team {
+			display: block;
+			& > a {
+				width: auto;
+			}
+		}
+		& > img {
+			height: 28px;
 			margin-left: 6px;
+			width: 28px;
 		}
 	}
 }
@@ -219,7 +226,6 @@
 @media (min-width: 1025px) {
 	.story-block {
 		flex-direction: row;
-
 		&_team {
 			flex-direction: row-reverse;
 			gap: 128px;

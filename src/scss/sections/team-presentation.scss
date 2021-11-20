@@ -137,6 +137,7 @@
         }
         &__link {
             @include speech-bubble-left(60px, $purple2, 3px, 30px);
+						@include body1-font;
             justify-content: center;
             margin-top: 24px;
             &-telegram {
@@ -146,6 +147,9 @@
                 }
             }
         }
+				&__contact {
+					@include body1-font;
+				}
     }
     .avatars {
         &__row {
@@ -153,7 +157,7 @@
                 margin-top: -45px;
             }
             &-sm {
-                width: 73%;
+                width: 72.5%;
             }
             &-lg {
                 flex-wrap: nowrap;
@@ -185,7 +189,6 @@
         }
     }
     .join-block {
-        @include body1-font;
         @include speech-bubble-left(60px, $purple2, 3px, 30px);
         align-items: center;
         display: inline-flex;
@@ -197,20 +200,15 @@
             line-height: 64px;
         }
         &>a {
-            @include body2-font;
+            @include body1-font;
             margin-top: 0;
             border: none;
             padding: 0;
-            &>span {
-                font-size: inherit;
-            }
         }
         &__link {
             &-telegram {
-                // @include speech-bubble-right(33px, $green1, 2px, 12px);
                 &>img {
                     filter: invert(53%) sepia(81%) saturate(3940%) hue-rotate(220deg) brightness(100%) contrast(103%);
-                    ;
                 }
             }
         }
@@ -218,7 +216,7 @@
     .avatars {
         &__row {
             &:nth-child(n+2) {
-                margin-top: -100px;
+                margin-top: -130px;
             }
         }
     }

@@ -113,22 +113,39 @@
 }
 
 @media (min-width: 1025px) {
-	.footer__mail {
-		grid-row: 1;
-		grid-column: 2;
-		text-align: right;
-		justify-self: flex-end;
-		align-self: center;
+	.footer {
+		&__mail {
+			grid-row: 1;
+			grid-column: 2;
+			text-align: right;
+			justify-self: flex-end;
+			align-self: center;
 
-		.mail {
-			&__descr {
-				color: #f0f0f0;
-				line-height: 28px;
-				font-size: 24px;
+			.mail {
+				&__descr {
+					color: #f0f0f0;
+					line-height: 28px;
+					font-size: 24px;
+				}
+
+				&__link {
+					font-size: 24px;
+				}
 			}
+		}
 
-			&__link {
-				font-size: 24px;
+		.menu {
+			&__map-list {
+				justify-content: space-between;
+			}
+			&__list {
+				height: auto;
+			}
+			&__item:nth-child(n + 2) {
+				margin-top: 24px;
+				&:nth-child(5) {
+					margin-top: 0;
+				}
 			}
 		}
 	}

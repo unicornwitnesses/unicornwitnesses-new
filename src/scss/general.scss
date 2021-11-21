@@ -53,6 +53,9 @@ a {
 	padding: 0 10px;
 }
 
+.hide {
+	opacity: 0;
+}
 // media-query for tablets
 @media (min-width: 767px) {
 	.container {

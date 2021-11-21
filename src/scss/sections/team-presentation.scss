@@ -123,6 +123,7 @@
         &__subtitle {
             line-height: 48px;
             font-size: 36px;
+						margin-top: 40px;
             padding: 0;
         }
         &__join {
@@ -174,8 +175,9 @@
 
 @media (min-width: 1025px) {
     .outer-container {
-        max-width: 1550px;
-        padding: 0 15px;
+			margin-top: 100px;
+      max-width: 1550px;
+      padding: 0 15px;
     }
     .team-presentation {
         padding-top: 195px;
@@ -184,15 +186,20 @@
         }
     }
     .leading-block {
-        &__subtitle {
-            padding-right: 309px;
-        }
+			&__title >h1 {
+				font-size: 72px;
+				line-height: 110%;
+			}
+      &__subtitle {
+        padding-right: 309px;
+      }
     }
     .join-block {
         @include speech-bubble-left(60px, $purple2, 3px, 30px);
         align-items: center;
         display: inline-flex;
         flex-direction: row;
+				margin-top: 80px;
         padding-left: 60px;
         padding-right: 60px;
         width: 970px;

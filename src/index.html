@@ -5,7 +5,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" sizes="any" type="image/svg" href="./assets/img/logo.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="<%= require('./site.webmanifest') %>">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<title>
 		<%= htmlWebpackPlugin.options.title %>
 	</title>
@@ -18,8 +24,8 @@
 			<div class="header__body">
 				<a href="/" class="header__logo logo">
 					<picture>
-						<source media="(min-width: 767px)" srcset="./assets/img/logo.png">
-						<img src="./assets/img/logo_110x60.png" alt="Logo of Unicorn Witnesses">
+						<source media="(min-width: 767px)" srcset="./assets/img/logo-187x102.svg">
+						<img src="./assets/img/logo-110x60.svg" alt="Logo of Unicorn Witnesses">
 					</picture>
 
 				</a>
@@ -159,7 +165,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/alex_dolgikh.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_dolgikh.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_dolgikh.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Alexey Dolgikh photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -170,7 +176,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/alena_korsunova.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alena_korsunova.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alena_korsunova.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Alena Korsunova photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -181,7 +187,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/alex_verevkin.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_verevkin.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_verevkin.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Alex Verevkin photo">
 							</picture>
 						</div>
 					</div>
@@ -194,7 +200,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/evgeniy_khristenko.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/evgeniy_khristenko.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/evgeniy_khristenko.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Evgeniy Khristenko photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -205,7 +211,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/nikita_khristenko.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/nikita_khristenko.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/nikita_khristenko.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Nikita Khristenko photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -216,7 +222,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/olya_nayda.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/olya_nayda.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/olya_nayda.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Olya Nayda photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -227,7 +233,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/andrey_anufr.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/andrey_anufr.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/andrey_anufr.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Andrey Anufrienko photo">
 							</picture>
 						</div>
 					</div>
@@ -240,7 +246,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/maxim_litv.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/maxim_litv.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/maxim_litv.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Maxim Litvinov photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -251,7 +257,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/ivan_ushmorov.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/ivan_ushmorov.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/ivan_ushmorov.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Ivan Ushmorov photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -262,7 +268,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/pavel_petrov.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/pavel_petrov.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/pavel_petrov.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Logo of unicorn-witnesses">
+								<img srcset="./assets/img/avatars/base/" alt="Pavel Petrov photo">
 							</picture>
 						</div>
 					</div>
@@ -339,7 +345,7 @@
 					<div class='story-block__col column column_team'>
 						<div class='column__img-block column__img-block_team'>
 							<div class='column__img column__img_logo'>
-								<img src='./assets/img/logo.png' alt='Логотип организации'>
+								<img src='./assets/img/logo-187x102.svg' alt='Логотип организации'>
 							</div>
 							<div class='column__color-block column__color-block_purple'></div>
 						</div>
@@ -406,10 +412,12 @@
 											class="socials__link socials__link_facebook">
 											<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
 										</a>
-										<a href="https://t.me/alexdolbun" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+										<a href="https://t.me/alexdolbun" target="blank" rel="noopener noreferrer" class="socials__link"
+											title="some title">
 											<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
 										</a>
-										<a href="https://www.instagram.com/alexdolbun/" target="blank" rel="noopener noreferrer" class="socials__link">
+										<a href="https://www.instagram.com/alexdolbun/" target="blank" rel="noopener noreferrer"
+											class="socials__link">
 											<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
 										</a>
 										<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank"
@@ -1018,8 +1026,8 @@
 			<div class="footer__block">
 				<a href="" class="footer__logo logo">
 					<picture>
-						<source media="(min-width: 767px)" srcset="./assets/img/logo.png">
-						<img src="./assets/img/logo_110x60.png" alt="Logo of unicorn-witnesses">
+						<source media="(min-width: 767px)" srcset="./assets/img/logo-187x102.svg">
+						<img src="./assets/img/logo-110x60.svg" alt="Logo of unicorn-witnesses">
 					</picture>
 				</a>
 				<div class="footer__mail mail">

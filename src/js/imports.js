@@ -1,4 +1,9 @@
-import '../assets/img/logo.svg';
+import '../assets/img/logo-110x60.svg';
+import '../assets/img/logo-187x102.svg';
+import '../apple-touch-icon.png';
+import '../favicon-32x32.png';
+import '../favicon-16x16.png';
+import '../safari-pinned-tab.svg';
 import '../assets/img/icons/angellist.svg';
 import '../assets/img/icons/arrow-down.svg';
 import '../assets/img/icons/cb.svg';

@@ -5,6 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -12,9 +16,7 @@
 	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<title>
-		<%= htmlWebpackPlugin.options.title %>
-	</title>
+	<meta property="og:title" content="UnicornWitnesses" />
 </head>
 
 <body>
@@ -82,7 +84,8 @@
 							rel="noopener noreferrer" class="socials__link">
 							<img src="./assets/img/icons/instagram.svg" alt="Go to instagram" class="socials__img">
 						</a>
-						<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
+						<a href="https://twitter.com/i/lists/1420798762524499972/members" target="blank" rel="noopener noreferrer"
+							class="socials__link">
 							<img src="./assets/img/icons/twitter.svg" alt="Go to twitter" class="socials__img">
 						</a>
 						<a href="https://www.linkedin.com/company/unicornwitnesses/" title="We are in Linkedin" target="blank"
@@ -165,7 +168,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/alex_dolgikh.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_dolgikh.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_dolgikh.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Alexey Dolgikh photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Alexey Dolgikh photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -176,7 +179,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/alena_korsunova.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alena_korsunova.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alena_korsunova.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Alena Korsunova photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Alena Korsunova photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -187,7 +190,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/alex_verevkin.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_verevkin.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/alex_verevkin.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Alex Verevkin photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Alex Verevkin photo">
 							</picture>
 						</div>
 					</div>
@@ -200,7 +203,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/evgeniy_khristenko.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/evgeniy_khristenko.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/evgeniy_khristenko.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Evgeniy Khristenko photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Evgeniy Khristenko photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -211,7 +214,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/nikita_khristenko.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/nikita_khristenko.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/nikita_khristenko.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Nikita Khristenko photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Nikita Khristenko photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -222,7 +225,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/olya_nayda.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/olya_nayda.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/olya_nayda.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Olya Nayda photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Olya Nayda photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -233,7 +236,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/andrey_anufr.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/andrey_anufr.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/andrey_anufr.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Andrey Anufrienko photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Andrey Anufrienko photo">
 							</picture>
 						</div>
 					</div>
@@ -246,7 +249,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/maxim_litv.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/maxim_litv.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/maxim_litv.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Maxim Litvinov photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Maxim Litvinov photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -257,7 +260,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/ivan_ushmorov.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/ivan_ushmorov.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/ivan_ushmorov.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Ivan Ushmorov photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Ivan Ushmorov photo">
 							</picture>
 						</div>
 						<div class="avatars__item">
@@ -268,7 +271,7 @@
 								<source media="(max-width: 1025px)" srcset="./assets/img/avatars/150/pavel_petrov.webp">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/pavel_petrov.png">
 								<source media="(min-width: 1026px)" srcset="./assets/img/avatars/base/pavel_petrov.webp">
-								<img srcset="./assets/img/avatars/base/" alt="Pavel Petrov photo">
+								<img srcset="./assets/img/avatars/base/" loading="lazy" alt="Pavel Petrov photo">
 							</picture>
 						</div>
 					</div>
@@ -311,7 +314,7 @@
 								<picture>
 									<source srcset='./assets/img/iphone-mockup.webp' type='image/webp'>
 									<source srcset='./assets/img/iphone-mockup.png' type='image/png'>
-									<img src='./assets/img/iphone-mockup.webp' alt='Изображение телефона'>
+									<img src='./assets/img/iphone-mockup.webp' loading="lazy" alt='Изображение телефона'>
 								</picture>
 							</div>
 							<div class='column__color-block'></div>
@@ -342,7 +345,7 @@
 					<div class='story-block__col column column_team'>
 						<div class='column__img-block column__img-block_team'>
 							<div class='column__img column__img_logo'>
-								<img src='./assets/img/logo-187x102.svg' alt='Логотип организации'>
+								<img src='./assets/img/logo-187x102.svg' loading="lazy" alt='Логотип организации'>
 							</div>
 							<div class='column__color-block column__color-block_purple'></div>
 						</div>
@@ -398,30 +401,31 @@
 									<div class="caption__fullname">Алексей Долгих</div>
 									<div class="caption__position">CTO, Quality assurance</div>
 									<div class="caption__socials socials">
-										<a href="https://alexdolbun.com/" class="socials__link">
+										<a href="https://alexdolbun.com/" title="Go to Alexey website" target="blank"
+											rel="noopener noreferrer" class="socials__link">
 											<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
 										</a>
-										<a href="https://twitter.com/alexdolbun" target="blank" rel="noopener noreferrer"
-											class="socials__link">
+										<a href="https://twitter.com/alexdolbun" title="Go to Alexey twitter" target="blank"
+											rel="noopener noreferrer" class="socials__link">
 											<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
 										</a>
-										<a href="https://fb.com/alexdolbun" target="blank" rel="noopener noreferrer"
-											class="socials__link socials__link_facebook">
+										<a href="https://fb.com/alexdolbun" target="blank" title="Go to facebook page of Alexey"
+											rel="noopener noreferrer" class="socials__link socials__link_facebook">
 											<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
 										</a>
-										<a href="https://t.me/alexdolbun" target="blank" rel="noopener noreferrer" class="socials__link"
-											title="some title">
+										<a href="https://t.me/alexdolbun" title="go to telegram contact of Alexey" target="blank"
+											rel="noopener noreferrer" class="socials__link">
 											<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
 										</a>
-										<a href="https://www.instagram.com/alexdolbun/" target="blank" rel="noopener noreferrer"
+										<a href="https://www.instagram.com/alexdolbun/" title="go to instagram account of Alexey" target="blank" rel="noopener noreferrer"
 											class="socials__link">
 											<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
 										</a>
-										<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank"
-											rel="noopener noreferrer" class="socials__link">
+										<a href="https://www.linkedin.com/in/alexdolbun" target="blank" rel="noopener noreferrer"
+											class="socials__link">
 											<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
 										</a>
-										<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+										<a href="https://www.github.com/alexdolbun" target="blank" rel="noopener noreferrer"
 											class="socials__link">
 											<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
 										</a>
@@ -430,28 +434,30 @@
 							</div>
 							<div class="speach__text-block text-block">
 								<div class="text-block__socials socials">
-									<a href="" class="socials__link">
+									<a href="https://alexdolbun.com/" class="socials__link">
 										<img src="./assets/img/icons/globe.svg" alt="" class="socials__img">
 									</a>
-									<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer"
+									<a href="https://twitter.com/alexdolbun" target="blank" rel="noopener noreferrer"
 										class="socials__link">
 										<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img">
 									</a>
-									<a href="https://facebook.com/" target="blank" rel="noopener noreferrer"
+									<a href="https://fb.com/alexdolbun" target="blank" rel="noopener noreferrer"
 										class="socials__link socials__link_facebook">
 										<img src="./assets/img/icons/facebook.svg" alt="go to facebook" class="socials__img">
 									</a>
-									<a href="" target="blank" rel="noopener noreferrer" class="socials__link" title="some title">
+									<a href="https://t.me/alexdolbun" target="blank" rel="noopener noreferrer" class="socials__link"
+										title="some title">
 										<img src="./assets/img/icons/telegram.svg" alt="go to telegram" class="socials__img">
 									</a>
-									<a href="" target="blank" rel="noopener noreferrer" class="socials__link">
+									<a href="https://www.instagram.com/alexdolbun/" target="blank" rel="noopener noreferrer"
+										class="socials__link">
 										<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img">
 									</a>
-									<a href="https://www.linkedin.com/company/unicornwitnesses/" target="blank" rel="noopener noreferrer"
+									<a href="https://www.linkedin.com/in/alexdolbun" target="blank" rel="noopener noreferrer"
 										class="socials__link">
 										<img src="./assets/img/icons/linkedin.svg" alt="go to linkedin" class="socials__img">
 									</a>
-									<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
+									<a href="https://www.github.com/alexdolbun" target="blank" rel="noopener noreferrer"
 										class="socials__link">
 										<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img">
 									</a>
@@ -1052,7 +1058,8 @@
 							<img src="./assets/img/icons/instagram.svg" alt="go to instagram" class="socials__img" />
 							<span>Инста</span>
 						</a>
-						<a href="https://twitter.com/unicornwitness" target="blank" rel="noopener noreferrer" class="socials__link">
+						<a href="https://twitter.com/i/lists/1420798762524499972/members" target="blank" rel="noopener noreferrer"
+							class="socials__link">
 							<img src="./assets/img/icons/twitter.svg" alt="go to twitter" class="socials__img" />
 							<span>Твиттер</span>
 						</a>
@@ -1077,7 +1084,7 @@
 							<span>ProductHunt</span>
 						</a>
 						<a href="https://github.com/unicornwitnesses" target="blank" rel="noopener noreferrer"
-						title="We are in GitHub" class="socials__link">
+							title="We are in GitHub" class="socials__link">
 							<img src="./assets/img/icons/github.svg" alt="go to github" class="socials__img" />
 							<span>GitHub</span>
 						</a>

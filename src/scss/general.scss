@@ -56,6 +56,9 @@ a {
 .hide {
 	opacity: 0;
 }
+.show {
+	transition: opacity 1s ease-in;
+}
 // media-query for tablets
 @media (min-width: 767px) {
 	.container {

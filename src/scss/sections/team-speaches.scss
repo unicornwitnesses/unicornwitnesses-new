@@ -239,11 +239,10 @@
 			padding: 0;
 		}
 		&__list {
-			height: 4000px;
-			margin-top: 16px;
-		}
-		&__item {
-			max-width: calc(50% - 16px);
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(auto-fill, max-content);
+			column-gap: 23px
 		}
 		.speach {
 			&:nth-child(n+2) {

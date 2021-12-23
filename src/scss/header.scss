@@ -253,6 +253,11 @@
 	}
 }
 
+.disabled {
+	color: $disable;
+	pointer-events: none;
+}
+
 @media (min-width: 767px) {
 	.header {
 		padding-top: 16px;

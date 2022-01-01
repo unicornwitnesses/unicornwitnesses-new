@@ -34,9 +34,7 @@ module.exports = {
 			title: 'UnicornWitnesses',
 			template: path.resolve(__dirname, 'src/index.html'),
 			filename: 'index.html',
-			minify: {
-				collapseWhitespace: isProd,
-			},
+			minify: isProd
 		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({

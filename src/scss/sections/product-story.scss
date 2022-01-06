@@ -104,6 +104,9 @@
 			word-wrap: break-word;
 		}
 	}
+	&__cta > a {
+		flex-basis: 143px;
+	}
 }
 
 .cta-item {
@@ -111,6 +114,7 @@
 	align-items: center;
 	& > a {
 		@include body2-font;
+		color: $purple-light;
 	}
 	& > img {
 		animation: arrow-move 2s infinite;
@@ -183,6 +187,7 @@
 				@include body1-font;
 
 				color: #fff;
+				flex-basis: auto;
 				text-decoration: underline;
 			}
 

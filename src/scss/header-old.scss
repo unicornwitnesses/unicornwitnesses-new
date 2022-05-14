@@ -1,477 +1,477 @@
 .header {
-  background-color: #000;
-  padding: 16px 0 7px 0;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 10;
+	background-color: #000;
+	padding: 16px 0 7px 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 10;
 
-  &__body {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
 
-  &__logo {
-    flex: 0 0 187px;
-    height: 102px;
-    margin-right: 15px;
-  }
+	&__logo {
+		flex: 0 0 187px;
+		height: 102px;
+		margin-right: 15px;
+	}
 
-  &__logo > img {
-    width: 100%;
-    object-fit: contain;
-  }
+	&__logo > img {
+		width: 100%;
+		object-fit: contain;
+	}
 
-  &__content {
-    display: grid;
-    grid-template-columns: minmax(max-content, 634px) minmax(max-content, 372px);
-    grid-template-rows: min-content 1fr;
-    row-gap: 15px;
-  }
+	&__content {
+		display: grid;
+		grid-template-columns: minmax(max-content, 634px) minmax(max-content, 372px);
+		grid-template-rows: min-content 1fr;
+		row-gap: 15px;
+	}
 }
 
 .content {
-  .menu {
-    &__list {
-      display: flex;
-      justify-content: space-between;
-    }
+	.menu {
+		&__list {
+			display: flex;
+			justify-content: space-between;
+		}
 
-    &__link {
-      @include body2-font;
-    }
-  }
+		&__link {
+			@include body2-font;
+		}
+	}
 
-  .lang {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px 0 0 0;
+	.lang {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 5px 0 0 0;
 
-    &__speech {
-      @include body2-font;
+		&__speech {
+			@include body2-font;
 
-      margin-right: 12px;
-    }
+			margin-right: 12px;
+		}
 
-    &__select {
-      @include body2-font;
+		&__select {
+			@include body2-font;
 
-      display: flex;
+			display: flex;
 
-      & > img {
-        width: 100%;
-        object-fit: contain;
-      }
-    }
+			& > img {
+				width: 100%;
+				object-fit: contain;
+			}
+		}
 
-    &__arrow {
-      display: flex;
-      height: 20px;
-      width: 20px;
+		&__arrow {
+			display: flex;
+			height: 20px;
+			width: 20px;
 
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 
-  .mail {
-    display: flex;
-    flex-direction: column;
+	.mail {
+		display: flex;
+		flex-direction: column;
 
-    &__descr {
-      @include body2-font;
+		&__descr {
+			@include body2-font;
 
-      color: $gray;
-    }
+			color: $gray;
+		}
 
-    & > a {
-      @include body2-font;
+		& > a {
+			@include body2-font;
 
-      color: $gold;
-      text-decoration: underline;
-    }
-  }
+			color: $gold;
+			text-decoration: underline;
+		}
+	}
 
-  .socials {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+	.socials {
+		align-items: center;
+		justify-content: space-between;
+		display: flex;
 
-    &__link {
-      & > img:hover {
-        transform: scale(1.5);
-      }
+		&__link {
+			& > img:hover {
+				transform: scale(1.5);
+			}
 
-      .fb {
-        padding: 0 5px;
-      }
-    }
-  }
+			.fb {
+				padding: 0 5px;
+			}
+		}
+	}
 }
 
 .burger {
-  display: none;
+	display: none;
 
-  &__label {
-    @include body2-font;
-  }
+	&__label {
+		@include body2-font;
+	}
 
-  &__button {
-    width: 40px;
-    height: 40px;
-  }
+	&__button {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 //media-query for mobile devices
 @media (max-width: 767px) {
-  .lock {
-    overflow: hidden;
-  }
+	.lock {
+		overflow: hidden;
+	}
 
-  .header {
-    padding-bottom: 56px;
+	.header {
+		padding-bottom: 56px;
 
-    &__logo {
-      height: 60px;
-      flex-basis: 110px;
-    }
+		&__logo {
+			height: 60px;
+			flex-basis: 110px;
+		}
 
-    &__content {
-      align-content: space-between;
-      background-color: #000;
-      display: none;
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(4, max-content);
-      height: 100vh;
-      padding: 45px 20px 29px 24px;
-      position: absolute;
-      top: 0;
-      z-index: 2;
-      grid-template-areas: 'gridItem4' 'gridItem1' 'gridItem3' 'gridItem2';
-    }
-  }
+		&__content {
+			align-content: space-between;
+			background-color: #000;
+			display: none;
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(4, max-content);
+			height: 100vh;
+			padding: 45px 20px 29px 24px;
+			position: absolute;
+			top: 0;
+			z-index: 2;
+			grid-template-areas: 'gridItem4' 'gridItem1' 'gridItem3' 'gridItem2';
+		}
+	}
 
-  .burger {
-    align-items: center;
-    display: flex;
-    position: absolute;
-    right: 21px;
-    top: 26px;
-    z-index: 3;
+	.burger {
+		align-items: center;
+		display: flex;
+		position: absolute;
+		right: 21px;
+		top: 26px;
+		z-index: 3;
 
-    &__label {
-      margin-right: 12px;
-    }
+		&__label {
+			margin-right: 12px;
+		}
 
-    &__button {
-      position: relative;
-      width: 28px;
-      height: 20px;
+		&__button {
+			position: relative;
+			width: 28px;
+			height: 20px;
 
-      & > span {
-        display: block;
-        background-color: #fff;
-        content: '';
-        height: 3px;
-        position: absolute;
-        top: 0;
-        transition: transform 0.3s linear;
-        width: 100%;
+			& > span {
+				display: block;
+				background-color: #fff;
+				content: '';
+				height: 3px;
+				position: absolute;
+				top: 0;
+				transition: transform 0.3s linear;
+				width: 100%;
 
-        &:nth-of-type(2) {
-          top: 8.7px;
-        }
+				&:nth-of-type(2) {
+					top: 8.7px;
+				}
 
-        &:nth-of-type(3) {
-          margin-top: 17.4px;
-        }
-      }
-    }
-  }
+				&:nth-of-type(3) {
+					margin-top: 17.4px;
+				}
+			}
+		}
+	}
 
-  .content {
-    animation: moveWindowRight 0.3s 1;
+	.content {
+		animation: moveWindowRight 0.3s 1;
 
-    &.active {
-      display: grid;
-      animation: moveWindowLeft 0.3s 1;
-      left: 0;
-    }
-  }
+		&.active {
+			display: grid;
+			animation: moveWindowLeft 0.3s 1;
+			left: 0;
+		}
+	}
 
-  .socials {
-    grid-area: gridItem1;
-  }
+	.socials {
+		grid-area: gridItem1;
+	}
 
-  .mail {
-    grid-area: gridItem2;
-  }
+	.mail {
+		grid-area: gridItem2;
+	}
 
-  .lang {
-    grid-area: gridItem3;
-  }
+	.lang {
+		grid-area: gridItem3;
+	}
 
-  .menu {
-    grid-area: gridItem4;
+	.menu {
+		grid-area: gridItem4;
 
-    &__list {
-      flex-direction: column;
-    }
-  }
+		&__list {
+			flex-direction: column;
+		}
+	}
 
-  .active {
-    .header__content {
-      width: 100vw;
-    }
+	.active {
+		.header__content {
+			width: 100vw;
+		}
 
-    .header__body {
-      height: 100vh;
-    }
+		.header__body {
+			height: 100vh;
+		}
 
-    .burger__button {
-      :nth-child(even) {
-        display: none;
-      }
+		.burger__button {
+			:nth-child(even) {
+				display: none;
+			}
 
-      :nth-child(odd) {
-        top: 8.7px;
-        margin: 0;
-      }
+			:nth-child(odd) {
+				top: 8.7px;
+				margin: 0;
+			}
 
-      :first-child {
-        transform: rotate(45deg);
-      }
+			:first-child {
+				transform: rotate(45deg);
+			}
 
-      :last-child {
-        transform: rotate(-45deg);
-      }
-    }
+			:last-child {
+				transform: rotate(-45deg);
+			}
+		}
 
-    .socials {
-      flex-wrap: wrap;
-      padding-right: 36px;
-      justify-content: flex-start;
-      row-gap: 24px;
+		.socials {
+			flex-wrap: wrap;
+			padding-right: 36px;
+			justify-content: flex-start;
+			row-gap: 24px;
 
-      &__link {
-        height: 20px;
-        flex: 0 0 20px;
-        margin-right: 20px;
-        position: relative;
-      }
+			&__link {
+				height: 20px;
+				flex: 0 0 20px;
+				margin-right: 20px;
+				position: relative;
+			}
 
-      &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
+			&__img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
 
-    .lang {
-      justify-content: flex-start;
-    }
-  }
+		.lang {
+			justify-content: flex-start;
+		}
+	}
 }
 
 //media-query for tablets
 @media (min-width: 768px) and (max-width: 1024px) {
-  .lock {
-    overflow: hidden;
-  }
+	.lock {
+		overflow: hidden;
+	}
 
-  .header {
-    padding-top: 17px;
-    padding-bottom: 56px;
+	.header {
+		padding-top: 17px;
+		padding-bottom: 56px;
 
-    &__logo {
-      height: 102px;
-      flex-basis: 187px;
-    }
+		&__logo {
+			height: 102px;
+			flex-basis: 187px;
+		}
 
-    &__content {
-      align-content: space-between;
-      background-color: #000;
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(2, max-content);
-      justify-items: start;
-      position: relative;
-      top: 0;
-      width: 100%;
-      z-index: 2;
-      flex: 0 1 372px;
-      grid-template-areas: 'lang' 'social';
+		&__content {
+			align-content: space-between;
+			background-color: #000;
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(2, max-content);
+			justify-items: start;
+			position: relative;
+			top: 0;
+			width: 100%;
+			z-index: 2;
+			flex: 0 1 372px;
+			grid-template-areas: 'lang' 'social';
 
-      & > .menu {
-        display: none;
-        grid-area: gridItem4;
+			& > .menu {
+				display: none;
+				grid-area: gridItem4;
 
-        &__list {
-          flex-direction: column;
-        }
-      }
+				&__list {
+					flex-direction: column;
+				}
+			}
 
-      & > .lang {
-        padding-left: 60px;
-        grid-area: lang;
-      }
+			& > .lang {
+				padding-left: 60px;
+				grid-area: lang;
+			}
 
-      & > .mail {
-        display: none;
-        grid-area: gridItem2;
-      }
+			& > .mail {
+				display: none;
+				grid-area: gridItem2;
+			}
 
-      & > .socials {
-        grid-area: social;
-        width: 100%;
-      }
-    }
-  }
+			& > .socials {
+				grid-area: social;
+				width: 100%;
+			}
+		}
+	}
 
-  .burger {
-    align-items: center;
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 7px;
-    z-index: 3;
+	.burger {
+		align-items: center;
+		display: flex;
+		position: absolute;
+		right: 0;
+		top: 7px;
+		z-index: 3;
 
-    &__label {
-      margin-right: 12px;
-    }
+		&__label {
+			margin-right: 12px;
+		}
 
-    &__button {
-      position: relative;
-      width: 28px;
-      height: 20px;
+		&__button {
+			position: relative;
+			width: 28px;
+			height: 20px;
 
-      & > span {
-        display: block;
-        background-color: #fff;
-        content: '';
-        height: 3px;
-        position: absolute;
-        top: 0;
-        transition: transform 0.3s linear;
-        width: 100%;
+			& > span {
+				display: block;
+				background-color: #fff;
+				content: '';
+				height: 3px;
+				position: absolute;
+				top: 0;
+				transition: transform 0.3s linear;
+				width: 100%;
 
-        &:nth-of-type(2) {
-          top: 8.7px;
-        }
+				&:nth-of-type(2) {
+					top: 8.7px;
+				}
 
-        &:nth-of-type(3) {
-          margin-top: 17.4px;
-        }
-      }
-    }
-  }
+				&:nth-of-type(3) {
+					margin-top: 17.4px;
+				}
+			}
+		}
+	}
 
-  .active {
-    .header__body {
-      position: relative;
-      height: 100vh;
-    }
+	.active {
+		.header__body {
+			position: relative;
+			height: 100vh;
+		}
 
-    .content {
-      animation: moveWindowLeft 0.3s 1;
-      align-content: space-between;
-      background-color: #000;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(4, max-content);
-      padding: 45px 20px 29px 24px;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 2;
-      grid-template-areas: 'gridItem4' 'social' 'lang' 'gridItem2';
+		.content {
+			animation: moveWindowLeft 0.3s 1;
+			align-content: space-between;
+			background-color: #000;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(4, max-content);
+			padding: 45px 20px 29px 24px;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 2;
+			grid-template-areas: 'gridItem4' 'social' 'lang' 'gridItem2';
 
-      &__nav {
-        display: block;
+			&__nav {
+				display: block;
 
-        .menu__list {
-          flex-direction: column;
-        }
-      }
+				.menu__list {
+					flex-direction: column;
+				}
+			}
 
-      &__lang {
-        padding: 0;
-      }
+			&__lang {
+				padding: 0;
+			}
 
-      &__mail {
-        display: block;
-      }
+			&__mail {
+				display: block;
+			}
 
-      &__socials {
-        flex-wrap: wrap;
-        padding-right: 36px;
-        justify-content: flex-start;
-        row-gap: 24px;
+			&__socials {
+				flex-wrap: wrap;
+				padding-right: 36px;
+				justify-content: flex-start;
+				row-gap: 24px;
 
-        & > a.socials__link {
-          height: 20px;
-          flex: 0 0 20px;
-          margin-right: 20px;
-          position: relative;
+				& > a.socials__link {
+					height: 20px;
+					flex: 0 0 20px;
+					margin-right: 20px;
+					position: relative;
 
-          &-facebook {
-            margin-right: 10px;
-          }
+					&-facebook {
+						margin-right: 10px;
+					}
 
-          & > img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-      }
-    }
+					& > img {
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
 
-    .burger__button {
-      :nth-child(even) {
-        display: none;
-      }
+		.burger__button {
+			:nth-child(even) {
+				display: none;
+			}
 
-      :nth-child(odd) {
-        top: 8.7px;
-        margin: 0;
-      }
+			:nth-child(odd) {
+				top: 8.7px;
+				margin: 0;
+			}
 
-      :first-child {
-        transform: rotate(45deg);
-      }
+			:first-child {
+				transform: rotate(45deg);
+			}
 
-      :last-child {
-        transform: rotate(-45deg);
-      }
-    }
-  }
+			:last-child {
+				transform: rotate(-45deg);
+			}
+		}
+	}
 }
 
 // I don't like my version of animation with navbar.
 // I think - Maybe we can find other way of implementation this idea
 @keyframes moveWindowLeft {
-  0% {
-    left: 100vw;
-  }
+	0% {
+		left: 100vw;
+	}
 
-  100% {
-    left: 0;
-  }
+	100% {
+		left: 0;
+	}
 }
 
 @keyframes moveWindowRight {
-  0% {
-    left: 0;
-  }
+	0% {
+		left: 0;
+	}
 
-  100% {
-    left: 100vw;
-  }
+	100% {
+		left: 100vw;
+	}
 }

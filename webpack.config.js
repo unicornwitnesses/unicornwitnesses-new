@@ -9,7 +9,7 @@ const filename = (ext) =>
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
-
+console.log(isProd);
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
 
@@ -34,7 +34,7 @@ module.exports = {
 			title: 'UnicornWitnesses',
 			template: path.resolve(__dirname, 'src/index.html'),
 			filename: 'index.html',
-			minify: isProd
+			minify: isDev
 		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({

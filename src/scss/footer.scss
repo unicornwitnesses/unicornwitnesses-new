@@ -138,11 +138,14 @@
 			&__map-list {
 				justify-content: space-between;
 			}
+
 			&__list {
 				height: auto;
 			}
+
 			&__item:nth-child(n + 2) {
 				margin-top: 24px;
+
 				&:nth-child(5) {
 					margin-top: 0;
 				}

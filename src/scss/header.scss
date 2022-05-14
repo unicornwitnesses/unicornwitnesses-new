@@ -261,6 +261,7 @@
 @media (min-width: 767px) {
 	.header {
 		padding-top: 16px;
+
 		&__body {
 			flex-direction: row;
 			flex-wrap: nowrap;
@@ -275,7 +276,6 @@
 
 @media (min-width: 1025px) {
 	.header {
-
 		&__content {
 			grid-template-areas: 'menu lang' 'mail socials';
 			grid-template-columns: minmax(max-content, 634px) 1fr;
@@ -294,10 +294,12 @@
 
 	.menu {
 		height: 24px;
+
 		&__list {
 			flex-direction: row;
 			height: 24px;
 		}
+
 		&__item {
 			display: flex;
 		}
